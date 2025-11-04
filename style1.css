@@ -1,0 +1,203 @@
+ :root {
+            --cyan-glow: 0 0 15px rgba(6, 182, 212, 0.5), 0 0 5px rgba(6, 182, 212, 0.7);
+            --purple-glow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 5px rgba(168, 85, 247, 0.7);
+            --green-glow: 0 0 15px rgba(34, 197, 94, 0.5), 0 0 5px rgba(34, 197, 94, 0.7);
+            --ui-border-color: rgba(100, 230, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            background-image: linear-gradient(160deg, #0f172a 0%, #020617 50%, #1e1b4b 100%);
+            color: #e0f2fe;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .font-chakra { font-family: 'Chakra Petch', sans-serif; }
+
+        /* --- Particle & HUD Styles --- */
+        #particle-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.5; }
+        .hud-corner { position: fixed; width: 30px; height: 30px; z-index: 10; animation: hud-flicker 5s infinite; }
+        .hud-top-left { top: 20px; left: 20px; border-top: 2px solid var(--ui-border-color); border-left: 2px solid var(--ui-border-color); }
+        .hud-top-right { top: 20px; right: 20px; border-top: 2px solid var(--ui-border-color); border-right: 2px solid var(--ui-border-color); }
+        .hud-bottom-left { bottom: 20px; left: 20px; border-bottom: 2px solid var(--ui-border-color); border-left: 2px solid var(--ui-border-color); }
+        .hud-bottom-right { bottom: 20px; right: 20px; border-bottom: 2px solid var(--ui-border-color); border-right: 2px solid var(--ui-border-color); }
+        @keyframes hud-flicker { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.9; } 52% { opacity: 0.3; } 54% { opacity: 0.7; } }
+        
+        /* --- General UI Components --- */
+        .card {
+            background: rgba(17, 24, 39, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--ui-border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.3);
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+        }
+        .btn-primary {
+            position: relative;
+            background-image: linear-gradient(to right, #06b6d4 0%, #3b82f6 100%);
+            color: white; font-family: 'Chakra Petch', sans-serif; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.1em; padding: 0.75rem 2.5rem;
+            font-size: 1.125rem;
+            clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+            transition: all 0.2s ease-out; border: none; cursor: pointer;
+        }
+        .btn-primary::before {
+            content: ''; position: absolute; top: 2px; left: 2px; right: 2px; bottom: 2px;
+            background-image: linear-gradient(to right, #06b6d4 0%, #3b82f6 100%);
+            clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+            z-index: -1; transition: all 0.2s ease-out;
+        }
+        .btn-primary:hover { transform: translateX(5px); background-image: linear-gradient(to right, #08e2ff 0%, #569eff 100%); }
+        .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; background-image: linear-gradient(to right, #374151, #4b5563); }
+        .tech-input {
+            background: rgba(2, 6, 23, 0.7); border: 1px solid #374151; color: white;
+            border-radius: 0; padding: 0.75rem 1rem; font-size: 1rem; transition: all 0.3s ease;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+        }
+        .tech-input:focus { outline: none; border-color: var(--ui-border-color); box-shadow: var(--cyan-glow); }
+        .tech-select {
+            background: rgba(2, 6, 23, 0.7); border: 1px solid #374151; color: #9ca3af;
+            border-radius: 0; padding: 0.5rem 1rem; font-size: 1rem; transition: all 0.3s ease;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+            font-family: 'Chakra Petch', sans-serif; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+            background-position: right 0.5rem center; background-repeat: no-repeat; background-size: 1.5em 1.5em; padding-right: 2.5rem;
+        }
+        .tech-select:focus { outline: none; border-color: var(--ui-border-color); box-shadow: var(--cyan-glow); color: white; }
+        .tech-select option { background: #0f172a; color: white; }
+
+        /* --- Header Styles --- */
+        .site-header {
+            width: 100%; padding: 1rem 1.5rem; margin-bottom: 2rem;
+            display: flex; flex-direction: column; md:flex-direction: row;
+            align-items: center; justify-content: space-between;
+            border-bottom: 1px solid var(--ui-border-color); background: rgba(15, 23, 42, 0.5);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), var(--cyan-glow);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 30px) calc(100% - 15px), 30px calc(100% - 15px), 0 100%);
+        }
+        .site-logo { font-size: 2.5rem; color: #06b6d4; margin-right: 1rem; text-shadow: var(--cyan-glow); animation: hud-flicker 4s infinite; }
+        .site-title { font-family: 'Chakra Petch', sans-serif; font-size: 2.5rem; font-weight: 700; color: #e0f2fe; text-transform: uppercase; letter-spacing: 0.15em; text-shadow: 0 0 5px rgba(224, 242, 254, 0.5), var(--cyan-glow); }
+        .header-controls { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; md:margin-top: 0; }
+        .logout-btn { background: transparent; border: 1px solid #374151; color: #9ca3af; padding: 0.5rem 0.75rem; transition: all 0.3s ease; }
+        .logout-btn:hover { background: rgba(239, 68, 68, 0.2); border-color: #ef4444; color: #f87171; box-shadow: var(--red-glow); }
+
+        /* --- Loading & Login --- */
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fade-in { animation: fade-in 0.4s ease-out; }
+        .loading-boot-sequence { font-family: 'Chakra Petch', sans-serif; color: #06b6d4; text-align: left; font-size: 1.125rem; }
+        .loading-boot-sequence > div { opacity: 0; animation: fade-in 0.5s ease forwards; }
+
+        /* --- Game Card Styles --- */
+        .game-card {
+            display: block;
+            position: relative;
+            background: rgba(17, 24, 39, 0.7);
+            border: 1px solid #374151;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #9ca3af;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+        }
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.2), transparent);
+            transition: all 0.4s ease;
+            transform: skewX(-25deg);
+        }
+        .game-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: rgba(17, 24, 39, 0.9);
+            border-color: var(--ui-border-color);
+            color: #e0f2fe;
+            box-shadow: var(--cyan-glow);
+        }
+        .game-card:hover::before { left: 100%; }
+        .game-card .card-icon {
+            font-size: 3rem;
+            color: #06b6d4;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        .game-card:hover .card-icon {
+            color: #08e2ff;
+            transform: scale(1.1);
+        }
+        .game-card h4 {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e0f2fe;
+            margin-bottom: 0.5rem;
+        }
+        .played-badge {
+            position: absolute;
+            top: 10px; right: 10px;
+            background: rgba(34, 197, 94, 0.8);
+            color: white;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            box-shadow: var(--green-glow);
+        }
+
+        /* --- Recently Played Styles --- */
+        .recent-card {
+            flex-shrink: 0;
+            width: 200px;
+            display: block;
+            background: rgba(17, 24, 39, 0.7);
+            border: 1px solid #374151;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+        }
+        .recent-card:hover {
+            border-color: var(--ui-border-color);
+            transform: translateY(-3px);
+            box-shadow: var(--cyan-glow);
+        }
+        .recent-card .icon {
+            font-size: 1.5rem;
+            color: #06b6d4;
+            margin-right: 0.75rem;
+        }
+        .recent-card .name {
+            font-family: 'Chakra Petch', sans-serif;
+            color: #e0f2fe;
+            font-size: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* --- Stats Card Styles --- */
+        .stat-card {
+            background: rgba(17, 24, 39, 0.7);
+            border: 1px solid #374151;
+            padding: 1.5rem;
+            text-align: center;
+            clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+        }
+        .stat-card h4 {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.25rem;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        .stat-value {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #06b6d4;
+            text-shadow: var(--cyan-glow);
+            line-height: 1;
+        }
