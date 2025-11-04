@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURAKSHA NET - Home</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    
+    <style src="style.css">
+        /* --- Root Variables & Base Styles --- */
+   
+    </style>
+</head>
+
+<body class="min-h-dvh flex flex-col items-center justify-start p-4">
+
+    <canvas id="particle-canvas"></canvas>
+    <div class="hud-corner hud-top-left"></div>
+    <div class="hud-corner hud-top-right"></div>
+    <div class="hud-corner hud-bottom-left"></div>
+    <div class="hud-corner hud-bottom-right"></div>
+
+    <div id="loading-overlay" class="fixed inset-0 bg-slate-950 z-50 flex items-center justify-center animate-fade-in">
+        <div class="card rounded-2xl p-8 md:p-12 text-center text-white w-full max-w-md">
+            <h2 class="font-chakra text-3xl text-cyan-300 mt-6 mb-6" data-lang-key="connecting">CONNECTING TO SURAKSHA-NET...</h2>
+            <div id="boot-sequence" class="loading-boot-sequence space-y-2 h-40"></div>
+        </div>
+    </div>
+
+    <div id="login-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center p-4 z-40 hidden animate-fade-in" aria-modal="true" role="dialog">
+        <div class="card rounded-2xl p-8 md:p-12 text-center text-white max-w-md w-full">
+            <i class="fa-solid fa-user-secret text-6xl text-cyan-400 mb-6"></i>
+            <h1 class="font-chakra text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-4" data-lang-key="welcome">Welcome to SURAKSHA NET</h1>
+            <p class="text-lg text-gray-300 mb-8" data-lang-key="enterNamePrompt">Please enter your name to begin.</p>
+            <div class="space-y-6">
+                <div>
+                    <label for="username-input" class="block text-sm font-medium text-gray-300 mb-2 text-left font-chakra" data-lang-key="callsign">Your Name / आपका नाम:</label>
+                    <input type="text" id="username-input" class="w-full tech-input" placeholder="e.g., CyberAvenger">
+                </div>
+                <button id="login-btn" class="w-full btn-primary !mt-8" data-lang-key="engage">Engage</button>
+            </div>
+        </div>
+    </div>
+
+    <main id="app" class="w-full max-w-5xl my-auto z-10 space-y-8 hidden">
+        
+        <header class="site-header">
+            <div class="flex items-center">
+                <i class="fas fa-shield-halved site-logo"></i>
+                <h1 class="site-title">SURAKSHA-NET</h1>
+            </div>
+            <div class="header-controls">
+                <select id="lang-select" class="tech-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                <div id="user-info" class="flex items-center gap-4">
+                    <span id="username-display" class="font-chakra text-lg text-cyan-300"></span>
+                    <button id="logout-btn" class="logout-btn" aria-label="Logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <h2 id="welcome-msg" class="font-chakra text-3xl md:text-4xl font-bold text-white text-center md:text-left"></h2>
+
+        <section id="recent-section" class="w-full hidden">
+            <h3 id="recent-title" class="font-chakra text-2xl text-cyan-300 mb-4 uppercase tracking-widest" data-lang-key="recent">Recently Played</h3>
+            <div id="recent-container" class="flex gap-4 overflow-x-auto pb-4">
+                </div>
+        </section>
+
+        <section class="w-full">
+            <h3 id="modules-title" class="font-chakra text-2xl text-cyan-300 mb-4 uppercase tracking-widest" data-lang-key="modules">Game Modules</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <a href="fake_call.html" class="game-card" data-game-id="call" data-game-name-en="Fake Call Sim" data-game-name-hi="स्कैम कॉल गेम">
+                    <div class="card-icon"><i class="fas fa-phone-slash"></i></div>
+                    <h4 id="game-title-call" data-lang-key="gameTitleCall">Fake Call Simulation</h4>
+                    <p id="game-desc-call" data-lang-key="gameDescCall">Can you outsmart a live scammer in a call?</p>
+                    <div id="played-call" class="played-badge hidden" data-lang-key="played">Played</div>
+                </a>
+                
+                <a href="multilingual_quiz.html" class="game-card" data-game-id="quiz" data-game-name-en="Knowledge Quiz" data-game-name-hi="ज्ञान प्रश्नोत्तरी">
+                    <div class="card-icon"><i class="fas fa-question-circle"></i></div>
+                    <h4 id="game-title-quiz" data-lang-key="gameTitleQuiz">Knowledge Quiz</h4>
+                    <p id="game-desc-quiz" data-lang-key="gameDescQuiz">Test your cyber security knowledge.</p>
+                    <div id="played-quiz" class="played-badge hidden" data-lang-key="played">Played</div>
+                </a>
+                
+                <a href="https://surat-bhushan.github.io/CyberRakshak/" class="game-card" data-game-id="video" data-game-name-en="Learn with Videos" data-game-name-hi="वीडियो से सीखें">
+                    <div class="card-icon"><i class="fas fa-video"></i></div>
+                    <h4 id="game-title-video" data-lang-key="gameTitleVideo">Learn with Videos</h4>
+                    <p id="game-desc-video" data-lang-key="gameDescVideo">Watch short videos about common scams.</p>
+                </a>
+                
+                <a href="#" class="game-card" data-game-id="cards" data-game-name-en="Learn New Words" data-game-name-hi="नए शब्द सीखें">
+                    <div class="card-icon"><i class="fas fa-clone"></i></div>
+                    <h4 id="game-title-cards" data-lang-key="gameTitleCards">Learn New Words</h4>
+                    <p id="game-desc-cards" data-lang-key="gameDescCards">Flip cards to learn new cyber terms.</p>
+                </a>
+
+                 <a href="help6.html" class="game-card" data-game-id="analyzer" data-game-name-en="Scam Analyzer" data-game-name-hi="स्कैम विश्लेषक">
+                    <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h4 id="game-title-analyzer" data-lang-key="gameTitleAnalyzer">Scam Analyzer</h4>
+                    <p id="game-desc-analyzer" data-lang-key="gameDescAnalyzer">Check suspicious messages or images.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="w-full">
+            <h3 id="stats-title" class="font-chakra text-2xl text-cyan-300 mb-4 uppercase tracking-widest" data-lang-key="stats">Your Stats</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="stat-card">
+                    <h4 id="stat-quiz-title" data-lang-key="statQuiz">Quiz High Score</h4>
+                    <div id="quiz-score" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4 id="stat-call-title" data-lang-key="statCall">Call Sims Played</h4>
+                    <div id="call-plays" class="stat-value">0</div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="w-full text-center p-4 mt-8 z-10">
+        <p class="font-chakra text-sm text-cyan-500/60 tracking-widest">
+            SURAKSHA NET :: CYBER AWARENESS SIM v4.0
+        </p>
+    </footer>
+
+    <script type="module" src="app1.js">
+      
+    </script>
+</body>
+</html>
