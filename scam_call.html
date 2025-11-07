@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURAKSHA NET - The Scammer's Call</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <style>
+:root{--cyan-glow:0 0 15px rgba(6, 182, 212, 0.5), 0 0 5px rgba(6, 182, 212, 0.7);--purple-glow:0 0 15px rgba(168, 85, 247, 0.5), 0 0 5px rgba(168, 85, 247, 0.7);--red-glow:0 0 15px rgba(239, 68, 68, 0.5), 0 0 5px rgba(239, 68, 68, 0.7);--green-glow:0 0 15px rgba(34, 197, 94, 0.5), 0 0 5px rgba(34, 197, 94, 0.7);--ui-border-color:rgba(100, 230, 255, 0.3);}body{font-family:'Inter', sans-serif;background-color:#020617;background-image:linear-gradient(160deg, #0f172a 0%, #020617 50%, #1e1b4b 100%);color:#e0f2fe;overflow-y:auto;overflow-x:hidden;}#particle-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:0.5;}.font-chakra{font-family:'Chakra Petch', sans-serif;}.card{background:rgba(17, 24, 39, 0.85);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border:1px solid var(--ui-border-color);box-shadow:0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.3);clip-path:polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);}.btn-primary{position:relative;background-image:linear-gradient(to right, #06b6d4 0%, #3b82f6 100%);color:white;font-family:'Chakra Petch', sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;padding:0.75rem 2.5rem;font-size:1.125rem;clip-path:polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);transition:all 0.2s ease-out;border:none;}.btn-primary::before{content:'';position:absolute;top:2px;left:2px;right:2px;bottom:2px;background-image:linear-gradient(to right, #06b6d4 0%, #3b82f6 100%);clip-path:polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);z-index:-1;transition:all 0.2s ease-out;}.btn-primary:hover{transform:translateX(5px);background-image:linear-gradient(to right, #08e2ff 0%, #569eff 100%);}.btn-primary:disabled{opacity:0.4;cursor:not-allowed;transform:none;background-image:linear-gradient(to right, #374151, #4b5563);}.btn-option{position:relative;width:100%;background:rgba(17, 24, 39, 0.7);border:1px solid #374151;color:#9ca3af;font-weight:600;border-radius:0;padding:0.75rem 1rem;padding-left:2.5rem;text-align:left;transition:all 0.2s ease-out;overflow:hidden;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);}.btn-option::before{content:'>';position:absolute;left:-10px;top:50%;transform:translateY(-50%);font-family:'Chakra Petch', sans-serif;font-size:1.5rem;color:#06b6d4;opacity:0;transition:all 0.3s ease;}.btn-option:hover{background:rgba(56, 189, 248, 0.2);border-color:var(--ui-border-color);color:#e0f2fe;transform:translateX(5px);box-shadow:inset 3px 0 0 #06b6d4, var(--cyan-glow);}.btn-option:hover::before{opacity:1;left:0.75rem;}.btn-lang{background:rgba(17, 24, 39, 0.7);border:2px solid #374151;transition:all 0.3s ease;clip-path:polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);font-family:'Chakra Petch', sans-serif;font-size:1.5rem;padding:2rem 1rem;}.btn-lang:hover{background:rgba(56, 189, 248, 0.1);border-color:var(--ui-border-color);transform:scale(1.05);}.tech-input{background:rgba(2, 6, 23, 0.7);border:1px solid #374151;color:white;border-radius:0;padding:0.75rem 1rem;font-size:1rem;transition:all 0.3s ease;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);}.tech-input:focus{outline:none;border-color:var(--ui-border-color);box-shadow:var(--cyan-glow);}.gender-btn{background:rgba(17, 24, 39, 0.7);border:2px solid #374151;transition:all 0.3s ease;clip-path:polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);}.gender-btn img{transition:transform 0.3s ease;opacity:0.7;filter:grayscale(50%);}.gender-btn:hover{background:rgba(56, 189, 248, 0.1);border-color:var(--ui-border-color);}.gender-btn:hover img{transform:scale(1.05);opacity:1;filter:grayscale(0);}.gender-btn.active{border-color:#06b6d4;box-shadow:var(--cyan-glow);background:rgba(56, 189, 248, 0.2);}.gender-btn.active img{opacity:1;filter:grayscale(0);}@keyframes fade-in-up{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}.animate-fade-in-up{animation:fade-in-up 0.6s ease-out forwards;}@keyframes fade-in{from{opacity:0;}to{opacity:1;}}.animate-fade-in{animation:fade-in 0.4s ease-out;}@keyframes scale-up{from{opacity:0;transform:scale(0.85);}to{opacity:1;transform:scale(1);}}.animate-scale-up{animation:scale-up 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;}@keyframes slide-in-left{from{opacity:0;transform:translateX(-30px);}to{opacity:1;transform:translateX(0);}}.chat-bubble-received{animation:slide-in-left 0.4s ease-out;}@keyframes slide-in-right{from{opacity:0;transform:translateX(30px);}to{opacity:1;transform:translateX(0);}}.chat-bubble-sent{animation:slide-in-right 0.4s ease-out;}.typewriter span{border-right:0.15em solid #06b6d4;animation:caret-blink 0.75s step-end infinite;}@keyframes caret-blink{from, to{border-color:transparent;}50%{border-color:#06b6d4;}}.chat-bubble-received.typing span{border-right:0.15em solid #06b6d4;animation:caret-blink 0.75s step-end infinite;}@keyframes vibrate{0%{transform:translate(0);}10%{transform:translate(-1px, 1px) rotate(0.5deg);}20%{transform:translate(-2px, -1px) rotate(-0.5deg);}30%{transform:translate(2px, 2px) rotate(0.5deg);}40%{transform:translate(1px, -1px) rotate(0.5deg);}50%{transform:translate(-1px, 2px) rotate(-0.5deg);}60%{transform:translate(-2px, 1px) rotate(0.5deg);}70%{transform:translate(2px, 1px) rotate(-0.5deg);}80%{transform:translate(-1px, -1px) rotate(0.5deg);}90%{transform:translate(1px, 2px) rotate(0.5deg);}100%{transform:translate(0);}}.vibrating{animation:vibrate 0.2s linear infinite;}@keyframes pulse-green{0%{box-shadow:0 0 0 0 rgba(34, 197, 94, 0.7), var(--green-glow);}70%{box-shadow:0 0 0 20px rgba(34, 197, 94, 0), var(--green-glow);}100%{box-shadow:0 0 0 0 rgba(34, 197, 94, 0), var(--green-glow);}}.btn-pulse-green{background:#22c55e;box-shadow:var(--green-glow);animation:pulse-green 1.5s infinite;}@keyframes pulse-red{0%{box-shadow:0 0 0 0 rgba(239, 68, 68, 0.7), var(--red-glow);}70%{box-shadow:0 0 0 20px rgba(239, 68, 68, 0), var(--red-glow);}100%{box-shadow:0 0 0 0 rgba(239, 68, 68, 0), var(--red-glow);}}.btn-pulse-red{background:#ef4444;box-shadow:var(--red-glow);animation:pulse-red 1.5s infinite;}.chat-bubble{max-width:75%;padding:0.75rem 1rem;border-radius:0.75rem;}.chat-bubble-received{background:#1f2937;color:#f3f4f6;border-bottom-left-radius:0.25rem;}.chat-bubble-sent{background:#0891b2;color:#ffffff;border-bottom-right-radius:0.25rem;}.chat-bubble-system{background:transparent;font-style:italic;color:#fde047;font-size:0.875rem;text-align:center;animation:fade-in 0.3s ease-out;}.chat-bubble-tip{background:rgba(6, 182, 212, 0.1);border:1px solid rgba(6, 182, 212, 0.3);color:#e0f2fe;font-size:0.875rem;text-align:left;animation:fade-in 0.3s ease-out;padding:0.75rem;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);}#toast-notification{transition:all 0.4s ease-in-out;transform:translateY(120px);opacity:0;background:rgba(34, 197, 94, 0.7);backdrop-filter:blur(10px);border:1px solid rgba(34, 197, 94, 0.8);box-shadow:var(--green-glow);}#toast-notification.show{transform:translateY(0);opacity:1;}.hud-corner{position:fixed;width:30px;height:30px;z-index:10;animation:hud-flicker 5s infinite;}.hud-top-left{top:20px;left:20px;border-top:2px solid var(--ui-border-color);border-left:2px solid var(--ui-border-color);}.hud-top-right{top:20px;right:20px;border-top:2px solid var(--ui-border-color);border-right:2px solid var(--ui-border-color);}.hud-bottom-left{bottom:20px;left:20px;border-bottom:2px solid var(--ui-border-color);border-left:2px solid var(--ui-border-color);}.hud-bottom-right{bottom:20px;right:20px;border-bottom:2px solid var(--ui-border-color);border-right:2px solid var(--ui-border-color);}.hud-corner::before, .hud-corner::after{content:'';position:absolute;background-color:var(--ui-border-color);opacity:0.5;}.hud-top-left::before, .hud-top-right::before{width:8px;height:1px;top:-1.5px;}.hud-top-left::after, .hud-bottom-left::after{width:1px;height:8px;left:-1.5px;}.hud-top-left::before{left:10px;}.hud-top-left::after{top:10px;}.hud-top-right::before{right:10px;}.hud-top-right::after{width:1px;height:8px;right:-1.5px;top:10px;}.hud-bottom-left::before{width:8px;height:1px;bottom:-1.5px;left:10px;}.hud-bottom-left::after{bottom:10px;}.hud-bottom-right::before{width:8px;height:1px;bottom:-1.5px;right:10px;}.hud-bottom-right::after{width:1px;height:8px;right:-1.5px;bottom:10px;}@keyframes hud-flicker{0%, 100%{opacity:0.4;}50%{opacity:0.9;}52%{opacity:0.3;}54%{opacity:0.7;}}.loader{width:60px;height:60px;border:6px solid rgba(56, 189, 248, 0.3);border-top-color:#06b6d4;border-radius:50%;animation:spin 1s linear infinite;}@keyframes spin{to{transform:rotate(360deg);}}.loading-boot-sequence{font-family:'Chakra Petch', sans-serif;color:#06b6d4;text-align:left;font-size:1.125rem;}.loading-boot-sequence > div{opacity:0;animation:fade-in 0.5s ease forwards;}.typing-dots{animation:fade-in 0.5s;}.typing-dots span{width:10px;height:10px;background-color:#9ca3af;border-radius:50%;display:inline-block;margin:0 2px;animation:bounce-dot 1.4s infinite ease-in-out both;}.typing-dots span:nth-child(1){animation-delay:-0.32s;}.typing-dots span:nth-child(2){animation-delay:-0.16s;}@keyframes bounce-dot{0%, 80%, 100%{transform:scale(0);}40%{transform:scale(1.0);}}@keyframes text-glitch{0%{text-shadow:0.05em 0 0 #f87171, -0.05em 0 0 #3b82f6;}14%{text-shadow:0.05em 0 0 #f87171, -0.05em 0 0 #3b82f6;}15%{text-shadow:-0.05em -0.025em 0 #f87171, 0.025em 0.025em 0 #3b82f6;}49%{text-shadow:-0.05em -0.025em 0 #f87171, 0.025em 0.025em 0 #3b82f6;}50%{text-shadow:0.025em 0.05em 0 #f87171, 0.05em 0 0 #3b82f6;}99%{text-shadow:0.025em 0.05em 0 #f87171, 0.05em 0 0 #3b82f6;}100%{text-shadow:-0.05em 0 0 #f87171, 0.05em 0 0 #3b82f6;}}.scam-alert-text{animation:text-glitch 0.65s infinite linear;}.phone-frame{background:#111;border-radius:30px;padding:10px;box-shadow:0 0 20px rgba(0,0,0,0.5), inset 0 0 5px rgba(255,255,255,0.2);margin-bottom:1.5rem;}.phone-screen{background:#0f172a;color:white;border-radius:20px;padding:1.5rem 1rem;border:2px solid #4b5563;min-height:200px;}.phone-status-bar{display:flex;justify-content:space-between;align-items:center;padding:0 0.5rem 0.5rem;color:#9ca3af;font-size:0.75rem;font-family:'Chakra Petch', sans-serif;border-bottom:1px solid #374151;margin-bottom:1rem;}.phone-status-bar .time{font-weight:600;}.phone-status-bar .icons{display:flex;gap:0.5rem;}@keyframes ring-pulse{0%{transform:scale(1);opacity:0.6;}100%{transform:scale(2.5);opacity:0;}}.call-icon-rings{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;height:100%;}.call-icon-rings div{position:absolute;top:0;left:0;right:0;bottom:0;border:2px solid #06b6d4;border-radius:50%;animation:ring-pulse 2s infinite ease-out;}.call-icon-rings .ring-1{animation-delay:0s;}.call-icon-rings .ring-2{animation-delay:0.5s;}.call-icon-rings .ring-3{animation-delay:1s;}@keyframes scan-line{0%{transform:translateY(-10px);opacity:0.3;}50%{transform:translateY(10px);opacity:1;}100%{transform:translateY(-10px);opacity:0.3;}}.threat-analysis-text::after{content:'Scanning...';animation:scan-line 1.5s infinite ease-in-out;}@keyframes pulse-red-border{0%{border-color:rgba(239, 68, 68, 0.4);box-shadow:0 10px 30px rgba(0, 0, 0, 0.5), var(--red-glow);}50%{border-color:rgba(239, 68, 68, 1);box-shadow:0 10px 30px rgba(0, 0, 0, 0.5), 0 0 35px rgba(239, 68, 68, 0.8), 0 0 15px rgba(239, 68, 68, 1);}100%{border-color:rgba(239, 68, 68, 0.4);box-shadow:0 10px 30px rgba(0, 0, 0, 0.5), var(--red-glow);}}.modal-alert{animation:pulse-red-border 1.5s infinite ease-in-out;}
+        /* --- FIX: Added smooth scrolling to chat --- */
+       #chat-messages {
+            scroll-behavior: smooth;
+        }
+        
+        /* --- NEW: TTS Highlight Class --- */
+        .highlight-tts {
+            background:rgba(56, 189, 248, 0.2) !important;
+            border-color:var(--ui-border-color) !important;
+            color:#e0f2fe !important;
+            transform:translateX(5px) !important;
+            box-shadow:inset 3px 0 0 #06b6d4, var(--cyan-glow) important;
+        }
+        .highlight-tts::before {
+            opacity:1 !important;
+            left:0.75rem !important;
+        }
+    </style>
+</head>
+<body class="min-h-dvh flex flex-col items-center justify-center p-4">
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="hud-corner hud-top-left"></div>
+    <div class="hud-corner hud-top-right"></div>
+    <div class="hud-corner hud-bottom-left"></div>
+    <div class="hud-corner hud-bottom-right"></div>
+
+    <main id="app" class="w-full max-w-lg my-auto z-10"></main>
+
+    <footer class="w-full text-center p-4 mt-8 z-10">
+        <p class="font-chakra text-sm text-cyan-500/60 tracking-widest" id="footer-text">
+            SURAKSHA NET :: CYBER AWARENESS SIM v4.0
+        </p>
+    </footer>
+
+    <!-- Modal for Scam Alert -->
+    <div id="scam-alert-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center p-4 z-50 hidden animate-fade-in" aria-modal="true" role="dialog">
+        <div class="card modal-alert p-6 md:p-8 text-center text-white max-w-sm w-full animate-scale-up border-red-500">
+            <h2 id="scam-alert-title" class="font-chakra text-4xl font-bold text-red-500 mb-4 scam-alert-text">! SCAM ALERT !</h2>
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="phone-status-bar">
+                        <span class="time">9:41 AM</span>
+                        <div class="icons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-three-quarters"></i></div>
+                    </div>
+                    <div class="bg-red-900/50 border border-red-600 rounded-lg p-3 text-left">
+                        <h3 id="scam-alert-bank-title" class="font-bold text-red-400 mb-1 flex items-center"><i class="fas fa-exclamation-triangle mr-2"></i>Transaction Alert!</h3>
+                        <p id="scam-consequence-text" class="text-white text-sm font-mono"></p>
+                    </div>
+                </div>
+            </div>
+            <p id="scam-feedback-text" class="text-lg text-gray-300 mb-8"></p>
+            <button id="close-scam-modal-btn" class="btn-primary bg-gradient-to-r from-red-500 to-orange-500 shadow-red-500/50">Try Again</button>
+        </div>
+    </div>
+
+    <!-- FIX: Responsive Toast Notification -->
+    <div id="toast-notification" class="fixed bottom-6 left-1/2 -translate-x-1/2 w-11/12 max-w-md text-white p-4 rounded-lg shadow-xl z-50 font-semibold flex items-center justify-center">
+        <span id="toast-message" class="w-full text-center"></span>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- Firebase & API Keys (REDACTED for brevity) ---
+        // NOTE: Use your actual keys here
+        const GEMINI_API_KEY = "AIzaSyDMRTxBQurhl19Osmzv0fucr072Jqh3juE";
+     const FIREBASE_CONFIG = {
+            apiKey: "AIzaSyAc4_dlsV6qmzmiialiaiyzg9OzQ1FIVsE",
+            authDomain: "surakshanetdei.firebaseapp.com",
+            projectId: "surakshanetdei",
+            storageBucket: "surakshanetdei.firebasestorage.app",
+            messagingSenderId: "140455865217",
+            appId: "1:140455865217:web:1f33162515bea371d1d680"
+        };
+        
+        
+        const GEMINI_MODEL = "gemini-1.5-flash-latest";
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+
+        const state = {
+currentView: 'language', // MODIFIED: Skip language selection
+            language: 'en', // ADD THIS LINE BACK
+            username: 'Agent', // MODIFIED: Hardcoded to bypass login
+            gender: 'male',  // MODIFIED: Hardcoded to bypass login
+            allScenarios: [], // Store all scenarios
+            gameScenario: null, // Store the *selected* scenario
+            currentGameIndex: null, // Index of the current scenario
+            playedScenarioIndices: [], // Indices of played scenarios
+            currentTurnIndex: 0,
+            mistakeCount: 0, // Score tracking
+            db: null,
+            auth: null,
+            userId: null,
+            appId: null,
+            lastPlayed: null,
+          isAuthReady: false,
+        isTyping: false,
+            ttsVoices: { en: null, hi: null },
+            ttsInterval: null, // Timer for voice loading
+        };
+
+        // --- UI TEXT (for i18n) (REDACTED for brevity) ---
+        const UI_TEXT = {
+            en: {
+                footer: "SURAKSHA NET :: CYBER AWARENESS SIM v4.0",
+                connect: "CONNECTING TO SURAKSHA-NET...",
+                auth: "AUTHENTICATING AGENT...",
+                loadAudio: "LOADING AUDIO MODULES...",
+                fetchSim: "FETCHING THREAT SIMULATION v4.0...",
+                ready: "SCENARIO ACQUIRED. READY.",
+                cooldown: "Simulation Cooldown",
+                cooldownDesc: "You've completed your cyber-awareness drill for today. Your defenses are up to date.",
+                cooldownReturn: "Return tomorrow for a new threat scenario.",
+                playMore: "Play More Today",
+                allCompleteTitle: "Congratulations, Agent!",
+                allCompleteDesc: "You have successfully neutralized all available threat simulations. Your awareness is top-notch.",
+                shareAchievement: "Share Your Achievement",
+                agentId: "Agent Identification",
+                welcomeBack: "Welcome Back",
+                selectProfile: "Select your profile to begin simulation.",
+                callsign: "Enter your Callsign:",
+                callsignPlaceholder: "e.g., CyberAvenger",
+                avatar: "Choose your Avatar:",
+                profileM: "Profile M",
+                profileF: "Profile F",
+                engage: "Engage",
+                agent: "Agent",
+                initializing: "Initializing...",
+                connectAgent: "Connecting Agent",
+                simDesc: "This is a SURAKSHA NET simulation.",
+                objective: "Your objective: Identify and neutralize a cyber-threat.",
+                warning: "Be cautious. They are masters of social engineering.",
+                alert: "Analyzing network... ALERT: Incoming unauthorized contact.",
+                incoming: "INCOMING THREAT...",
+                analysis: ":: THREAT ANALYSIS ::",
+                origin: "Origin: Unknown (Spoofed) ... Risk: High",
+                reject: "Reject",
+                accept: "Accept",
+                activeThreat: ":: ACTIVE THREAT ::",
+                threatNeutralized: "Threat Neutralized!",
+                threatReport: "THREAT REPORT",
+                evaded: "You've successfully evaded the scammer.",
+                mistakes: "Mistakes Made",
+                rating: "Agent Rating",
+                returnTom: "Return tomorrow for a new challenge.",
+                scamAlert: "! SCAM ALERT !",
+                bankAlert: "Transaction Alert!",
+                tryAgain: "Try Again",
+               tip: "CYBER TIP",
+                option: "Option"
+            },
+            hi: {
+                footer: "सुरक्षा नेट :: साइबर जागरूकता सिम v4.0",
+                connect: "सुरक्षा-नेट से कनेक्ट हो रहा है...",
+                auth: "एजेंट को प्रमाणित किया जा रहा है...",
+                loadAudio: "ऑडियो मॉड्यूल लोड हो रहे हैं...",
+                fetchSim: "थ्रेट सिमुलेशन v4.0 प्राप्त किया जा रहा है...",
+                ready: "सिनेरियो प्राप्त हुआ। तैयार है।",
+                cooldown: "सिमुलेशन कूलडाउन",
+                cooldownDesc: "आपने आज के लिए अपनी साइबर-जागरूकता ड्रिल पूरी कर ली है। आपकी सुरक्षा अद्यतन है।",
+                cooldownReturn: "एक नई चुनौती के लिए कल वापस आएँ।",
+                playMore: "आज और खेलें",
+                allCompleteTitle: "बधाई हो, एजेंट!",
+                allCompleteDesc: "आपने आज के लिए उपलब्ध सभी थ्रेट सिमुलेशन को सफलतापूर्वक बेअसर कर दिया है। आपकी जागरूकता उच्च कोटि की है।",
+                shareAchievement: "अपनी उपलब्धि साझा करें",
+                agentId: "एजेंट की पहचान",
+                welcomeBack: "वापस स्वागत है",
+                selectProfile: "सिमुलेशन शुरू करने के लिए अपनी प्रोफ़ाइल चुनें।",
+                callsign: "अपना कॉलसाइन दर्ज करें:",
+                callsignPlaceholder: "उदा., साइबर अवेंजर",
+                avatar: "अपना अवतार चुनें:",
+                profileM: "प्रोफ़ाइल M",
+                profileF: "प्रोफ़ाइल F",
+                engage: "शुरू करें",
+                agent: "एजेंट",
+                initializing: "शुरू हो रहा है...",
+                connectAgent: "एजेंट से कनेक्ट हो रहा है",
+                simDesc: "यह एक सुरक्षा नेट सिमुलेशन है।",
+                objective: "आपका उद्देश्य: एक साइबर-खतरे को पहचानना और बेअसर करना।",
+                warning: "सावधान रहें। वे सोशल इंजीनियरिंग के विशेषज्ञ हैं।",
+                alert: "नेटवर्क का विश्लेषण किया जा रहा है... अलर्ट: अज्ञात संपर्क आ रहा है।",
+                incoming: "आने वाला खतरा...",
+                analysis: ":: खतरे का विश्लेषण ::",
+                origin: "उत्पत्ति: अज्ञात (स्पूफेड) ... जोखिम: उच्च",
+                reject: "अस्वीकार करें",
+                accept: "स्वीकार करें",
+                activeThreat: ":: सक्रिय खतरा ::",
+                threatNeutralized: "खतरा बेअसर!",
+                threatReport: "थ्रेट रिपोर्ट",
+                evaded: "आपने सफलतापूर्वक स्कैमर को चकमा दे दिया।",
+                mistakes: "की गई गलतियाँ",
+                rating: "एजेंट रेटिंग",
+                returnTom: "एक नई चुनौती के लिए कल वापस आएँ।",
+                scamAlert: "! स्कैम अलर्ट !",
+                bankAlert: "लेन-देन अलर्ट!",
+                tryAgain: "पुनः प्रयास करें",
+                tip: "साइबर टिप",
+                option: "विकल्प"
+            }
+        };
+        
+        // --- audioManager (REDACTED for brevity) ---
+        const audioManager = {
+            isInitialized: false, synths: {}, loops: {},
+            async init() {
+                if (this.isInitialized) return;
+                await Tone.start();
+                this.synths.click = new Tone.Synth({ oscillator: { type: "sine" }, envelope: { attack: 0.005, decay: 0.1, sustain: 0, release: 0.1 } }).toDestination();
+                this.synths.send = new Tone.Synth({ oscillator: { type: "triangle" }, envelope: { attack: 0.01, decay: 0.1, sustain: 0.1, release: 0.1 } }).toDestination();
+                this.synths.receive = new Tone.Synth({ oscillator: { type: "square" }, envelope: { attack: 0.01, decay: 0.15, sustain: 0, release: 0.1 } }).toDestination();
+                this.synths.correct = new Tone.PolySynth(Tone.Synth).toDestination();
+                this.synths.wrong = new Tone.Synth({ oscillator: { type: "fmsawtooth", modulationIndex: 10, harmonicity: 0.5 }, envelope: { attack: 0.01, decay: 0.3, sustain: 0, release: 0.1 } }).toDestination();
+                this.synths.end = new Tone.PolySynth(Tone.Synth).toDestination();
+                this.synths.boot = new Tone.Synth({ oscillator: { type: "square" }, envelope: { attack: 0.01, decay: 0.05, sustain: 0, release: 0.1 } }).toDestination();
+                this.synths.score = new Tone.Synth({ oscillator: { type: "triangle" }, envelope: { attack: 0.001, decay: 0.05, sustain: 0, release: 0.1 } }).toDestination();
+                this.synths.victory = new Tone.PolySynth(Tone.Synth).toDestination();
+                this.synths.newMission = new Tone.Synth({ oscillator: { type: "triangle8" }, envelope: { attack: 0.01, decay: 0.2, sustain: 0.1, release: 0.3 } }).toDestination();
+                this.loops.ringtone = new Tone.Loop((time) => { const ringSynth = new Tone.Synth().toDestination(); ringSynth.triggerAttackRelease("A4", "16n", time); ringSynth.triggerAttackRelease("E5", "16n", time + 0.2); ringSynth.triggerAttackRelease("A5", "16n", time + 0.4); }, "2n");
+                this.loops.typewrite = new Tone.Loop((time) => { const typeSynth = new Tone.NoiseSynth({ noise: { type: "white" }, envelope: { attack: 0.001, decay: 0.05, sustain: 0, release: 0.01 } }).toDestination(); typeSynth.triggerAttackRelease("32n", time); }, "32n");
+                this.loops.background = new Tone.MembraneSynth({ pitchDecay: 0.8, octaves: 10, oscillator: { type: "fmsine" }, envelope: { attack: 0.01, decay: 0.4, sustain: 0.01, release: 1.4, attackCurve: "exponential" } }).toDestination();
+                this.loops.background.volume.value = -25;
+                this.isInitialized = true; console.log("Audio Context Initialized.");
+            },
+            play(soundName) {
+                if (!this.isInitialized) return;
+                try {
+                    const now = Tone.now();
+                    switch(soundName) {
+                        case 'click': this.synths.click.triggerAttackRelease("C5", "8n", now); break;
+                        case 'send': this.synths.send.triggerAttackRelease("C5", "8n", now); break;
+                        case 'receive': this.synths.receive.triggerAttackRelease("E5", "8n", now); break;
+                        case 'correct': this.synths.correct.triggerAttackRelease(["E5", "G#5", "C6"], "8n", now); break;
+                        case 'wrong': this.synths.wrong.triggerAttackRelease("C3", "4n", now); break;
+                        case 'end': this.synths.end.triggerAttackRelease(["C4", "E4", "G4", "C5"], "1n", now); break;
+                        case 'boot': this.synths.boot.triggerAttackRelease("G2", "32n", now); break;
+                        case 'score': this.synths.score.triggerAttackRelease("A4", "32n", now); break;
+                        case 'victory': this.synths.victory.triggerAttackRelease(["C5", "E5", "G5", "C6"], "1n", now); break;
+                        case 'newMission': this.synths.newMission.triggerAttackRelease("G4", "4n", now); break;
+                    }
+                } catch (e) { console.warn(`Audio play failed: ${e.message}`); }
+            },
+            playLoop(soundName) {
+                if (!this.isInitialized || !this.loops[soundName]) return;
+                if (Tone.Transport.state !== 'started') Tone.Transport.start();
+                if (soundName === 'background') { this.loops.background.triggerAttack("C1", Tone.now()); } else { this.loops[soundName].start(0); }
+            },
+            stopLoop(soundName) {
+                if (!this.isInitialized || !this.loops[soundName]) return;
+                if (soundName === 'background') { this.loops.background.triggerRelease(Tone.now()); } else { this.loops[soundName].stop(); }
+            },
+            stopAllLoops() {
+                if (!this.isInitialized) return;
+                this.loops.ringtone.stop();
+                this.loops.typewrite.stop();
+                this.loops.background.triggerRelease(Tone.now());
+            }
+        };
+
+        function getAvatarImgUrl(gender) {
+            // Placeholder images. Replace 'male.png' and 'female.png' with actual paths or URLs
+            const size = "120x120";
+            if (gender === 'male') {
+                return `male.png`;
+            } else {
+                return `female.png`;
+            }
+        }
+        function getScammerImgUrl() {
+            // Placeholder
+            return `scammer.png`;
+        }
+        function getEndScreenImgUrl() {
+            // Placeholder
+            return `secure.png`;
+        }
+
+    function t(key) { return UI_TEXT[state.language][key] || UI_TEXT['en'][key]; }
+
+        function stopSpeaking() {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel();
+            }
+        }
+
+      function speak(text, onSpeechEndCallback) {
+            if ('speechSynthesis' in window) {
+                stopSpeaking(); // Stop previous speech first
+                
+                const normalizedText = normalizeTextForTTS(text);
+              const utterance = new SpeechSynthesisUtterance(normalizedText);
+                
+                // --- FIX: This check now applies to all voices ---
+                if (text && !normalizedText) {
+                    utterance.text = text;
+                }
+                
+                // --- Voice Selection Block ---
+                if (state.language === 'hi' && state.ttsVoices.hi) {
+                    utterance.voice = state.ttsVoices.hi;
+                    utterance.lang = 'hi-IN';
+                } else if (state.language === 'en' && state.ttsVoices.en) {
+                    utterance.voice = state.ttsVoices.en;
+                    utterance.lang = 'en-US';
+                } else {
+                    // Fallback if no specific voice was found
+                    utterance.lang = state.language === 'hi' ? 'hi-IN' : 'en-US';
+                }
+                // --- End of Voice Selection Block ---
+                
+                // --- FIX: These must be OUTSIDE the if/else block ---
+                utterance.onend = () => {
+                    if (onSpeechEndCallback) {
+                        onSpeechEndCallback();
+                    }
+                };
+
+                utterance.onerror = (event) => {
+                    console.error("Speech synthesis error:", event.error);
+                    if (onSpeechEndCallback) {
+                        onSpeechEndCallback(); // Still call callback to not block the flow
+                    }
+                };
+                
+                speechSynthesis.speak(utterance);
+                
+            } else {
+                console.warn("Speech synthesis not supported in this browser.");
+                // If TTS isn't supported, just call the callback immediately
+                if (onSpeechEndCallback) {
+                    onSpeechEndCallback();
+                }
+            }
+        }
+
+    function loadVoices() {
+            if (!('speechSynthesis' in window)) return false;
+            const allVoices = speechSynthesis.getVoices();
+            if (allVoices.length === 0) return false; // Voices not loaded yet
+
+            // --- Find best English Voice ---
+            const enVoices = allVoices.filter(v => v.lang === 'en-US');
+            // Priority: Google, then any cloud-based (non-local), then any
+            let bestEn = 
+                enVoices.find(v => v.name.includes('Google')) ||
+                enVoices.find(v => !v.localService) ||
+                enVoices[0];
+            state.ttsVoices.en = bestEn || null;
+
+            // --- Find best Hindi Voice ---
+            const hiVoices = allVoices.filter(v => v.lang === 'hi-IN');
+            // Priority: Google, then Microsoft Asha (newer), then Kalpana (older), then any
+            let bestHi = 
+                hiVoices.find(v => v.name.includes('Google')) ||
+                hiVoices.find(v => v.name.includes('Asha')) ||
+                hiVoices.find(v => v.name.includes('Kalpana')) ||
+                hiVoices[0];
+          state.ttsVoices.hi = bestHi || null;
+
+            console.log("Selected Voices:", state.ttsVoices);
+            // Return true if we found at least one of our preferred voices (or any voice)
+          return state.ttsVoices.hi || state.ttsVoices.en || allVoices.length > 0;
+        }
+
+        function initTTS() {
+            // Clear any existing timer
+            if (state.ttsInterval) {
+                clearInterval(state.ttsInterval);
+                state.ttsInterval = null;
+            }
+            
+            if (loadVoices()) {
+                // Success! Voices are loaded.
+                console.log("TTS Voices successfully loaded.");
+            } else {
+                // Voices not ready, set a timer to try again.
+                console.log("TTS Voices not ready, polling...");
+                state.ttsInterval = setInterval(initTTS, 250);
+            }
+        }
+
+        function normalizeTextForTTS(text) {
+            if (!text) return "";
+            let normalized = text;
+            
+            // 1. Handle Indian currency (e.g., ₹25,000, ₹1,00,000)
+            // Replaces "₹1,00,000" with "1 lakh rupees"
+            normalized = normalized.replace(/₹[ \t]*([\d,]+)/g, (match, amount) => {
+                let num = parseInt(amount.replace(/,/g, ''), 10);
+                if (isNaN(num)) return "";
+                
+                if (num >= 10000000) {
+                    return `${Math.floor(num / 10000000)} crore rupees`;
+                } else if (num >= 100000) {
+                    return `${Math.floor(num / 100000)} lakh rupees`;
+                } else if (num >= 1000) {
+                    return `${Math.floor(num / 1000)} thousand rupees`;
+                } else {
+                    return `${num} rupees`;
+                }
+            });
+
+            // 2. Handle simple dollar amounts (e.g., $99, $1,199)
+            normalized = normalized.replace(/\$[ \t]*([\d,]+)/g, (match, amount) => {
+                let num = parseInt(amount.replace(/,/g, ''), 10);
+                if (isNaN(num)) return "";
+                
+                if (num >= 1000) {
+                    return `${Math.floor(num / 1000)} thousand dollars`;
+                } else {
+                    return `${num} dollars`;
+                }
+            });
+
+           return normalized;
+        }
+
+        
+
+       function render() {
+            const app = document.getElementById('app');
+            if (!app) return;
+            app.innerHTML = '';
+            audioManager.stopAllLoops();
+            stopSpeaking(); // Stop any active speech
+            
+            // Update static text
+            document.getElementById('footer-text').textContent = t('footer');
+            document.getElementById('scam-alert-title').textContent = t('scamAlert');
+            document.getElementById('scam-alert-bank-title').innerHTML = `<i class="fas fa-exclamation-triangle mr-2"></i>${t('bankAlert')}`;
+            document.getElementById('close-scam-modal-btn').textContent = t('tryAgain');
+
+            switch (state.currentView) {
+                case 'language': app.innerHTML = renderLanguageSelection(); attachLangListeners(); break;
+case 'loading': app.innerHTML = renderLoadingScreen(); break; // MODIFIED: Removed startBootSequence()                case 'login': app.innerHTML = renderLoginScreen(); attachLoginListeners(); break;
+                case 'intro': app.innerHTML = renderIntroScreen(); startIntroTypewriter(); break;
+                case 'call': app.innerHTML = renderCallScreen(); attachCallListeners(); break;
+                case 'chat': app.innerHTML = renderChatScreen(); displayCurrentTurn(); break;
+                case 'end': app.innerHTML = renderEndScreen(); attachEndScreenListeners(); startScoreTally(); break;
+                case 'dailyLimit': app.innerHTML = renderDailyLimitScreen(); attachDailyLimitListeners(); break;
+                case 'allComplete': app.innerHTML = renderAllCompleteScreen(); break;
+            }
+        }
+        
+        function renderLanguageSelection() {
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up"><h1 class="font-chakra text-3xl font-bold text-white mb-8">Select Language / भाषा चुनें</h1><div class="flex gap-4"><button id="lang-en" data-lang="en" class="btn-lang flex-1">English</button><button id="lang-hi" data-lang="hi" class="btn-lang flex-1">हिन्दी</button></div></div>`;
+        }
+
+       function renderLoadingScreen() {
+    // MODIFIED: Show a simple spinner instead of the boot sequence card
+    return `<div class="flex justify-center items-center h-40"><div class="loader"></div></div>`;
+}
+
+        function renderDailyLimitScreen() {
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up"><img src="${getEndScreenImgUrl()}" alt="Secure" class="w-28 h-28 mx-auto mb-6 rounded-full"><h1 class="font-chakra text-4xl font-bold text-white mb-4">${t('cooldown')}</h1><p class="text-lg text-gray-300 mb-8">${t('cooldownDesc')}</p><button id="play-more-btn" class="btn-primary !mt-8">${t('playMore')}</button></div>`;
+        }
+        
+        function renderAllCompleteScreen() {
+            audioManager.play('victory');
+            // !! IMPORTANT: Replace with your actual game link !!
+            const gameUrl = "https://surakshanetdei.firebaseapp.com/"; 
+            const shareText = "I aced the SURAKSHA NET cyber-awareness sim! Try it yourself!";
+            const shareTextEncoded = encodeURIComponent(shareText);
+            const gameUrlEncoded = encodeURIComponent(gameUrl);
+
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up">
+                <img src="${getEndScreenImgUrl()}" alt="Secure" class="w-28 h-28 mx-auto mb-6 rounded-full border-4 border-green-500/50 shadow-lg shadow-green-500/30">
+                <h1 class="font-chakra text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500 mb-2">${t('allCompleteTitle')}</h1>
+                <p class="text-lg text-gray-300 mb-8">${t('allCompleteDesc')}</p>
+                <h3 class="font-chakra text-xl text-white mb-6">${t('shareAchievement')}</h3>
+                <div class="flex justify-center gap-6 text-4xl">
+                    <a href="https://twitter.com/intent/tweet?text=${shareTextEncoded}&url=${gameUrlEncoded}" target="_blank" class="text-white/70 hover:text-white hover:scale-110 transition-transform" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=${shareTextEncoded} ${gameUrlEncoded}" target="_blank" class="text-white/70 hover:text-white hover:scale-110 transition-transform" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https.www.facebook.com/sharer/sharer.php?u=${gameUrlEncoded}&quote=${shareTextEncoded}" target="_blank" class="text-white/70 hover:text-white hover:scale-110 transition-transform" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>`;
+        }
+
+        function renderLoginScreen() {
+            const welcomeMessage = state.username 
+                ? `${t('welcomeBack')}, <span class="text-cyan-400">${state.username}</span> 
+                   <button id="logout-btn" class="ml-4 text-xs text-gray-400 hover:text-red-500 transition-colors">(Logout?)</button>` 
+                : t('agentId');
+                
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up"><i class="fa-solid fa-user-secret text-6xl text-cyan-400 mb-6"></i><h1 class="font-chakra text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-4">${welcomeMessage}</h1><p class="text-lg text-gray-300 mb-8">${t('selectProfile')}</p><div class="space-y-6">${state.username ? '' : `<div><label for="username" class="block text-sm font-medium text-gray-300 mb-2 text-left font-chakra">${t('callsign')}</label><input type="text" id="username" class="w-full tech-input" placeholder="${t('callsignPlaceholder')}"></div>`} <div><label class="block text-sm font-medium text-gray-300 mb-2 text-left font-chakra">${t('avatar')}</label><div class="flex gap-4"><button id="gender-male" data-gender="male" class="gender-btn flex-1 p-4"><img src="${getAvatarImgUrl('male')}" alt="Male Avatar" class="w-24 h-24 rounded-full mx-auto mb-2"><span class="block font-semibold font-chakra text-lg">${t('profileM')}</span></button><button id="gender-female" data-gender="female" class="gender-btn flex-1 p-4"><img src="${getAvatarImgUrl('female')}" alt="Female Avatar" class="w-24 h-24 rounded-full mx-auto mb-2"><span class="block font-semibold font-chakra text-lg">${t('profileF')}</span></button></div></div> <button id="start-game-btn" class="w-full btn-primary !mt-8" disabled>${t('engage')}</button></div></div>`;
+        }
+
+        function renderIntroScreen() {
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up"><div class="w-full flex justify-center mb-6"><img src="${getAvatarImgUrl(state.gender)}" alt="Agent Avatar" class="w-32 h-32 rounded-full border-4 border-cyan-500/50 shadow-lg shadow-cyan-500/30"></div><h1 class="font-chakra text-3xl font-bold text-white mb-8">${t('agent')}: ${state.username}</h1><div id="typewriter-container" class="text-left text-lg text-gray-300 h-24"><span>${t('initializing')}...</span></div></div>`;
+        }
+        
+        function renderCallScreen() {
+            audioManager.playLoop('ringtone');
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up vibrating"><div class="w-36 h-36 relative flex items-center justify-center mx-auto mb-4"><div class="call-icon-rings"><div class="ring-1"></div><div class="ring-2"></div><div class="ring-3"></div></div><div class="w-28 h-28 z-10 rounded-full bg-gray-900/50 flex items-center justify-center"><img src="${getScammerImgUrl()}" alt="Scammer" class="w-28 h-28 rounded-full border-4 border-red-500 shadow-lg shadow-red-500/30"></div></div><h1 class="font-chakra text-4xl font-bold text-white mb-2">${state.gameScenario.spammerName}</h1><p class="text-xl text-gray-400 mb-6 font-chakra tracking-wider">${t('incoming')}</p><div class="bg-black/20 p-3 rounded-lg border border-gray-700 mb-12"><p class="text-cyan-300 font-chakra text-sm">${t('analysis')}</p><p class="text-gray-300 text-xs">${t('origin')} <span class="threat-analysis-text"></span></p></div><div class="flex justify-around items-center"><div class="text-center"><button id="reject-call-btn" class="w-20 h-20 btn-pulse-red rounded-full flex items-center justify-center shadow-lg transform transition hover:scale-110"><i class="fas fa-phone-slash text-4xl text-white"></i></button><span class="block mt-3 font-semibold text-gray-300 font-chakra">${t('reject')}</span></div><div class="text-center"><button id="pickup-call-btn" class="w-20 h-20 btn-pulse-green rounded-full flex items-center justify-center shadow-lg transform transition hover:scale-110"><i class="fas fa-phone text-4xl text-white"></i></button><span class="block mt-3 font-semibold text-gray-300 font-chakra">${t('accept')}</span></div></div></div>`;
+        }
+
+        // --- FIX: Added Progress Bar and Stop Button ---
+        function renderChatScreen() {
+            audioManager.playLoop('background');
+            // Calculate progress based on current turn (0-indexed)
+            const totalTurns = state.gameScenario.chatFlow.length;
+            const currentProgress = (state.currentTurnIndex / totalTurns) * 100;
+
+            return `<div class="card rounded-2xl text-white animate-fade-in-up w-full max-h-[90dvh] flex flex-col overflow-hidden">
+                <div class="flex-shrink-0 flex items-center p-4 border-b border-cyan-500/30">
+                    <img src="${getScammerImgUrl()}" alt="Scammer" class="w-10 h-10 rounded-full mr-3 border-2 border-red-500/50">
+                    <h2 class="font-chakra text-2xl font-bold">${state.gameScenario.spammerName}</h2>
+                    <span class="ml-auto text-xs text-red-500 font-chakra animate-pulse">${t('activeThreat')}</span>
+                    
+                    <!-- NEW STOP BUTTON -->
+                    <button id="stop-chat-btn" class="ml-4 text-gray-400 hover:text-white transition-colors" aria-label="Stop Simulation">
+                        <i class="fas fa-times-circle text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- NEW PROGRESS BAR -->
+                <div class="w-full bg-gray-700 h-1.5 flex-shrink-0">
+                    <div id="chat-progress-bar" class="bg-cyan-400 h-1.5 transition-all duration-300 ease-out" style="width: ${currentProgress}%"></div>
+                </div>
+                
+                <div id="chat-messages" class="flex-1 p-4 space-y-4 overflow-y-auto"></div>
+                <div id="chat-options" class="flex-shrink-0 p-4 border-t border-cyan-500/30 space-y-3"></div>
+            </div>`;
+        }
+        
+        function renderEndScreen() {
+            audioManager.play('end');
+            return `<div class="card rounded-2xl p-8 md:p-12 text-center text-white animate-fade-in-up"><img src="${getEndScreenImgUrl()}" alt="Secure" class="w-28 h-28 mx-auto mb-6 rounded-full border-4 border-green-500/50 shadow-lg shadow-green-500/30"><h1 class="font-chakra text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500 mb-2">${t('threatNeutralized')}</h1><h2 class="font-chakra text-2xl text-white mb-6">${t('threatReport')}</h2><div class="bg-black/20 p-4 border border-gray-700 clip-path-polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%) mb-6 text-left space-y-2"><div class="flex justify-between items-center"><span class="font-chakra text-gray-400">${t('mistakes')}:</span><span id="mistake-count" class="font-chakra text-2xl text-red-500">0</span></div><div class="flex justify-between items-center"><span class="font-chakra text-gray-400">${t('rating')}:</span><span id="agent-rating" class="font-chakra text-2xl text-green-400">--</span></div></div><button id="play-more-btn" class="btn-primary !mt-8">${t('playMore')}</button></div>`;
+        }
+
+        // --- EVENT LISTENERS ---
+        
+        function attachLangListeners() {
+            document.getElementById('lang-en').addEventListener('click', () => {
+                audioManager.play('click');
+                state.language = 'en';
+              state.currentView = 'loading';
+render();
+initFirebase(); // ADD THIS LINE
+initFirebase(); // ADD THIS LINE
+                initFirebase(); // Start firebase init *after* lang is set
+            });
+            document.getElementById('lang-hi').addEventListener('click', () => {
+                audioManager.play('click');
+                state.language = 'hi';
+                state.currentView = 'loading';
+                render();
+                initFirebase(); // Start firebase init *after* lang is set
+            });
+        }
+
+        function attachLoginListeners() {
+            const logoutBtn = document.getElementById('logout-btn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', () => {
+                    audioManager.play('click');
+                    stopSpeaking();
+                    state.username = null;
+                    state.gender = null;
+                    saveUserData(); // This will save the nulls
+                    render(); // Re-renders the login screen
+                });
+            }
+
+            const usernameInput = document.getElementById('username');
+            const maleBtn = document.getElementById('gender-male');
+            const femaleBtn = document.getElementById('gender-female');
+            const startBtn = document.getElementById('start-game-btn');
+            
+            // Pre-fill gender if it exists
+            if (state.gender === 'male') maleBtn.classList.add('active');
+            if (state.gender === 'female') femaleBtn.classList.add('active');
+
+            const checkForm = () => {
+                const hasUsername = state.username || (usernameInput && usernameInput.value.trim().length > 2);
+                const hasGender = state.gender;
+                if (hasUsername && hasGender) { startBtn.disabled = false; } else { startBtn.disabled = true; }
+            };
+            
+            if (usernameInput) { usernameInput.addEventListener('input', checkForm); }
+            if (maleBtn) {
+                maleBtn.addEventListener('click', () => {
+                    audioManager.play('click'); state.gender = 'male';
+                    maleBtn.classList.add('active'); femaleBtn.classList.remove('active');
+                    checkForm();
+                });
+            }
+            if (femaleBtn) {
+                femaleBtn.addEventListener('click', () => {
+                    audioManager.play('click'); state.gender = 'female';
+                    femaleBtn.classList.add('active'); maleBtn.classList.remove('active');
+                    checkForm();
+                });
+            }
+            startBtn.addEventListener('click', () => {
+                audioManager.play('click');
+                if (usernameInput && !state.username) { state.username = usernameInput.value.trim(); }
+                saveUserData(); // Save name/gender
+                
+                // Now, select a scenario
+                const availableScenarios = state.allScenarios.map((sc, index) => ({...sc, originalIndex: index}))
+                                                             .filter(sc => !state.playedScenarioIndices.includes(sc.originalIndex));
+                
+                if (selectNextScenario(availableScenarios)) {
+state.currentView = 'call'; // MODIFIED: Skip intro, start call                    render();
+                } 
+                // else: allComplete screen will be shown by selectNextScenario
+            });
+            checkForm();
+        }
+        
+        function attachCallListeners() {
+            document.getElementById('pickup-call-btn').addEventListener('click', () => { audioManager.play('click'); state.currentView = 'chat'; render(); });
+            document.getElementById('reject-call-btn').addEventListener('click', () => { audioManager.play('click'); state.currentView = 'end'; saveUserData(); render(); });
+        }
+        
+        function attachEndScreenListeners() {
+            document.getElementById('play-more-btn').addEventListener('click', playMoreHandler);
+        }
+
+        function attachDailyLimitListeners() {
+            document.getElementById('play-more-btn').addEventListener('click', playMoreHandler);
+        }
+
+        const playMoreHandler = () => {
+            audioManager.play('click');
+            // Find available scenarios NOT in playedScenarioIndices
+            const availableScenarios = state.allScenarios.map((sc, index) => ({...sc, originalIndex: index}))
+                                                         .filter(sc => !state.playedScenarioIndices.includes(sc.originalIndex));
+            
+            if (selectNextScenario(availableScenarios)) {
+                state.currentView = 'intro'; // Go to intro for the new scenario
+                render();
+            }
+            // else: selectNextScenario already handled the 'allComplete' view
+        };
+
+
+        // --- GAME LOGIC ---
+        
+        // --- FIX: This function *already* shuffles by picking a random available scenario ---
+        function selectNextScenario(availableScenarios) {
+            if (!availableScenarios || availableScenarios.length === 0) {
+                state.currentView = 'allComplete';
+                render();
+                return false; // Return false to indicate no scenario found
+            }
+            
+            // Select a random scenario from the available ones
+            const randomScenario = availableScenarios[Math.floor(Math.random() * availableScenarios.length)];
+            
+            state.gameScenario = randomScenario;
+            state.currentGameIndex = randomScenario.originalIndex; // Store the index to save later
+            state.mistakeCount = 0; // Reset mistake count for new session
+            state.currentTurnIndex = 0; // Reset turn index
+            
+            audioManager.play('newMission'); // Play new mission sound
+            return true; // Return true to indicate success
+        }
+
+        function startBootSequence() {
+            const container = document.getElementById('boot-sequence');
+            if (!container) return;
+            const lines = [t('connect'), t('auth'), t('loadAudio'), t('fetchSim'), t('ready')];
+            let index = 0;
+            function addLine() {
+                if (index < lines.length) {
+                    audioManager.play('boot');
+                    const div = document.createElement('div');
+                    div.textContent = lines[index];
+                    div.style.animationDelay = `${index * 0.1}s`;
+                    container.appendChild(div);
+                    index++;
+                    setTimeout(addLine, index === lines.length - 1 ? 1000 : 300);
+                }
+            }
+            addLine();
+        }
+        
+        function startScoreTally() {
+            const mistakeEl = document.getElementById('mistake-count');
+            const ratingEl = document.getElementById('agent-rating');
+            if (!mistakeEl || !ratingEl) return;
+            
+            let count = 0;
+            const targetMistakes = state.mistakeCount;
+            const interval = setInterval(() => {
+                if (count <= targetMistakes) {
+                    audioManager.play('score');
+                    mistakeEl.textContent = count;
+                    count++;
+                } else {
+                    clearInterval(interval);
+                    let rating = 'S+';
+                    if (targetMistakes === 1) rating = 'A';
+                    else if (targetMistakes === 2) rating = 'B';
+                    else if (targetMistakes > 2) rating = 'C';
+                    ratingEl.textContent = rating;
+                    audioManager.play('correct');
+                }
+            }, 100);
+        }
+
+        // --- FIX: Modified scrolling logic ---
+        function typeMessage(element, text, onComplete) {
+            let index = 0;
+            element.innerHTML = '<span></span>';
+            const span = element.querySelector('span');
+            const messagesContainer = document.getElementById('chat-messages'); // Get container
+            state.isTyping = true;
+            audioManager.playLoop('typewrite');
+
+            function type() {
+                if (index < text.length) {
+                    span.textContent = text.substring(0, index + 1);
+                    index++;
+                    if (messagesContainer) { // Scroll on each character
+                        setTimeout(() => { // Defer scroll to end of event loop
+                            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                        }, 0);
+                    }
+                    setTimeout(type, 30);
+                } else {
+                    element.classList.remove('typing');
+                    span.textContent = text;
+                    state.isTyping = false;
+                    audioManager.stopLoop('typewrite');
+                    if (messagesContainer) { // Final scroll
+                         setTimeout(() => { // Defer scroll to end of event loop
+                            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                        }, 0);
+                    }
+                    if (onComplete) onComplete();
+                }
+            }
+            type();
+        }
+
+       function startIntroTypewriter() {
+            const container = document.getElementById('typewriter-container');
+            if (!container) return;
+            const messages = [
+                `${t('connectAgent')}: ${state.username}...`,
+                t('simDesc'),
+                t('objective'),
+                t('warning'),
+                t('alert')
+            ];
+            let msgIndex = 0;
+
+            function typeNextMessage() {
+                if (msgIndex >= messages.length) {
+                    stopSpeaking(); // Stop speech before moving on
+                    setTimeout(() => { state.currentView = 'call'; render(); }, 1000); // Original delay before call screen
+                    return;
+                }
+
+                const bubble = document.createElement('div');
+                container.innerHTML = '';
+                container.appendChild(bubble);
+                const currentMessage = messages[msgIndex];
+                
+                let isTypingDone = false;
+                let isSpeechDone = false;
+
+                // This function will be called by both typing and speech
+                // It will only proceed when both are complete.
+                function advance() {
+                    if (isTypingDone && isSpeechDone) {
+                        msgIndex++;
+                        typeNextMessage(); // Immediately type next message
+                    }
+                }
+
+                // 1. Start typing
+                // The onComplete callback fires when typing animation is finished
+                typeMessage(bubble, currentMessage, () => {
+                    // Wait 1.5s *after* typing is done, then mark as complete
+                    // This preserves the original pacing
+                    setTimeout(() => {
+                        isTypingDone = true;
+                        advance();
+                    }, 1500);
+                });
+
+                // 2. Start speaking
+                // The callback fires when speech is finished
+                speak(currentMessage, () => {
+                    isSpeechDone = true;
+                    advance();
+                });
+            }
+            typeNextMessage();
+        }
+      // --- FIX: Added Stop Button listener, final scroll, and TTS logic ---
+      // --- NEW: Rebuilt function with highlighting logic ---
+        function displayCurrentTurn() {
+            // Attach stop button listener
+            const stopBtn = document.getElementById('stop-chat-btn');
+            if (stopBtn) {
+                stopBtn.addEventListener('click', () => {
+                    stopSpeaking(); // Stop TTS
+                    audioManager.play('click');
+                    state.currentView = 'login'; // Go back to login/profile screen
+                    render();
+                });
+            }
+
+            if (state.currentTurnIndex >= state.gameScenario.chatFlow.length) {
+                state.currentView = 'end';
+                saveUserData();
+                setTimeout(render, 1000);
+                return;
+            }
+            
+            const turn = state.gameScenario.chatFlow[state.currentTurnIndex];
+            const scammerMessage = turn.spammerMessage;
+            const bubble = addChatMessage('', 'received');
+            bubble.classList.add('typing');
+
+            let isTypingDone = false;
+            let isSpeechDone = false;
+
+            // This function runs after *both* typing and speech are done
+            function advanceToOptions() {
+                if (!isTypingDone || !isSpeechDone) return; // Wait for both
+
+                const optionsContainer = document.getElementById('chat-options');
+                optionsContainer.innerHTML = '';
+                
+                // Create the buttons
+                turn.userOptions.forEach((option, index) => {
+                    const button = document.createElement('button');
+                    button.id = `chat-option-${index}`; // Give each button a unique ID
+                    button.className = "btn-option w-full";
+                    button.textContent = option.text;
+                    button.onclick = () => handleUserChoice(option, turn);
+                    optionsContainer.appendChild(button);
+                });
+
+                // --- FINAL SCROLL FIX ---
+                const messagesContainer = document.getElementById('chat-messages');
+                if (messagesContainer) {
+                    setTimeout(() => {
+                        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                    }, 0);
+                }
+
+                // --- NEW: Recursive function to speak and highlight ---
+                function speakOptionsSequentially(index) {
+                    if (index >= turn.userOptions.length) return; // All options spoken
+
+                    const option = turn.userOptions[index];
+                    const button = document.getElementById(`chat-option-${index}`);
+                    
+                    // Prepare the text: "Option 1: [text]" or "विकल्प 1: [text]"
+                    const textToSpeak = `${t('option')} ${index + 1}: ${option.text}`;
+
+                    // Add highlight
+                    if (button) button.classList.add('highlight-tts');
+
+                    speak(textToSpeak, () => {
+                        // onEnd: Remove highlight
+                        if (button) button.classList.remove('highlight-tts');
+                        
+                        // Speak the next option
+                        speakOptionsSequentially(index + 1);
+                    });
+                }
+                
+                // Start speaking the first option
+                speakOptionsSequentially(0);
+            }
+
+            // 1. Start typing
+            typeMessage(bubble, scammerMessage, () => {
+                isTypingDone = true;
+                advanceToOptions();
+            });
+
+            // 2. Start speaking the scammer's message
+            speak(scammerMessage, () => {
+                isSpeechDone = true;
+                advanceToOptions();
+            });
+        }
+
+        // --- FIX: Added Progress Bar update logic ---
+     function handleUserChoice(option, turn) {
+            stopSpeaking(); // Stop any speech on user choice
+            if (state.isTyping) return;
+            audioManager.play('send'); 
+            addChatMessage(option.text, 'sent');
+            document.getElementById('chat-options').innerHTML = `<div class="text-center p-4 typing-dots"><span></span><span></span><span></span></div>`;
+            
+            setTimeout(() => {
+                if (option.isCorrect) {
+                    // audioManager.play('correct'); // Moved from here, moved to showToast
+                    addChatMessage(turn.correctFeedback, 'system');
+                    if (turn.cyberTip) { // Display new Cyber Tip
+                        addChatMessage(`💡 ${t('tip')}: ${turn.cyberTip}`, 'tip');
+                    }
+                    showToast(turn.correctFeedback);
+                    state.currentTurnIndex++;
+                    
+                    // --- NEW PROGRESS BAR LOGIC ---
+                    const totalTurns = state.gameScenario.chatFlow.length;
+                    // Calculate progress for the *next* turn
+                    const currentProgress = (state.currentTurnIndex / totalTurns) * 100;
+                    const progressBar = document.getElementById('chat-progress-bar');
+                    if (progressBar) {
+                        progressBar.style.width = `${currentProgress}%`;
+                    }
+                    // --- END PROGRESS BAR LOGIC ---
+
+                    setTimeout(displayCurrentTurn, 1500);
+                } else {
+                    audioManager.play('wrong');
+                    state.mistakeCount++; // Increment mistake count
+                    document.getElementById('scam-consequence-text').textContent = turn.wrongConsequence;
+                    document.getElementById('scam-feedback-text').textContent = turn.wrongFeedback;
+                    document.getElementById('scam-alert-modal').classList.remove('hidden');
+                    
+                    document.getElementById('close-scam-modal-btn').onclick = () => {
+                        audioManager.play('click');
+                        document.getElementById('scam-alert-modal').classList.add('hidden');
+                        const optionsContainer = document.getElementById('chat-options');
+                        optionsContainer.innerHTML = '';
+                        turn.userOptions.forEach(opt => {
+                            const button = document.createElement('button');
+                            button.className = "btn-option w-full";
+                            button.textContent = opt.text;
+                            button.onclick = () => handleUserChoice(opt, turn);
+                            optionsContainer.appendChild(button);
+                        });
+                    };
+                }
+            }, 1500);
+        }
+
+        // --- FIX: Modified scrolling logic ---
+        function addChatMessage(text, type) {
+            if (type === 'sent') { audioManager.play('send'); }
+            else if (type === 'received') { audioManager.play('receive'); }
+            
+            const messagesContainer = document.getElementById('chat-messages');
+            const bubble = document.createElement('div');
+            let classes = 'chat-bubble ';
+            if (type === 'sent') { classes += 'chat-bubble-sent ml-auto'; } 
+            else if (type === 'received') { classes += 'chat-bubble-received mr-auto'; } 
+            else if (type === 'tip') { classes += 'chat-bubble-tip w-full'; }
+            else { classes += 'chat-bubble-system w-full'; }
+            
+            bubble.className = classes;
+            bubble.textContent = text;
+            messagesContainer.appendChild(bubble);
+            
+            setTimeout(() => { // Defer scroll to end of event loop
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }, 0);
+
+            return bubble;
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast-notification');
+            const msgEl = document.getElementById('toast-message');
+            if (!toast || !msgEl) return;
+            audioManager.play('correct'); // Play correct sound
+            msgEl.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => { toast.classList.remove('show'); }, 3000);
+        }
+
+        // --- GEMINI API FUNCTIONS ---
+
+        async function callGemini(payload) {
+            try {
+                let response; let delay = 1000;
+                for (let i = 0; i < 5; i++) {
+                    response = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                    if (response.ok) break;
+                    if (response.status === 429 || response.status >= 500) { await new Promise(resolve => setTimeout(resolve, delay)); delay *= 2; } 
+                    else { throw new Error(`API Error: ${response.status} ${response.statusText}`); }
+                }
+                if (!response.ok) throw new Error(`API request failed after retries: ${response.status}`);
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+                if (candidate && candidate.content?.parts?.[0]?.text) { return candidate.content.parts[0].text; } 
+                else { console.error("Invalid Gemini response structure:", result); throw new Error("Invalid response structure from Gemini API"); }
+            } catch (error) { console.error("Error calling Gemini API:", error); throw error; }
+        }
+        
+        // --- Schemas (REDACTED for brevity) ---
+        const scenarioSchema = {
+            type: "OBJECT",
+            properties: {
+                "spammerName": { "type": "STRING" },
+                "chatFlow": {
+                    type: "ARRAY",
+                    description: "An array of 10-12 chat turns.",
+                    items: {
+                        type: "OBJECT",
+                        properties: {
+                            "spammerMessage": { "type": "STRING" },
+                            "userOptions": {
+                                type: "ARRAY",
+                                items: {
+                                    type: "OBJECT",
+                                    properties: { "text": { "type": "STRING" }, "isCorrect": { "type": "BOOLEAN" } },
+                                    required: ["text", "isCorrect"]
+                                }
+                            },
+                            "correctFeedback": { "type": "STRING" },
+                            "cyberTip": { "type": "STRING", "description": "A short, educational cyber security tip related to the correct choice." },
+                            "wrongFeedback": { "type": "STRING" },
+                            "wrongConsequence": { "type": "STRING" }
+                        },
+                        required: ["spammerMessage", "userOptions", "correctFeedback", "cyberTip", "wrongFeedback", "wrongConsequence"]
+                    }
+                }
+            },
+            required: ["spammerName", "chatFlow"]
+        };
+        const gameSchema = {
+            type: "OBJECT",
+            properties: {
+                "scenarios": {
+                    type: "ARRAY",
+                    description: "An array of 3-5 different and complete chat scenarios.",
+                    items: scenarioSchema
+                }
+            },
+            required: ["scenarios"]
+        };
+
+
+        async function fetchGameScenario() {
+            console.log(`Fetching new game scenario in ${state.language}...`);
+            const lang = state.language === 'hi' ? 'Hindi' : 'English';
+            const systemInstruction = `You are an educator for 'SURAKSHA NET,' a game teaching rural youth about cyber fraud. Create a 'choose your own adventure' game scenario. The user must be able to win by making correct choices. The output MUST be valid JSON matching the provided schema. ALL text content (spammerName, messages, options, feedback, tips) MUST be in ${lang}.`;
+            const userQuery = `Generate a JSON object with a single key "scenarios". This key should contain an array of 4 different and complete chat scenarios. Each scenario should be about a common financial scam (like OTP, KYC, lottery, or fake job offer). Each scenario must have 10-12 turns. The narrative must be complex: 1. Start with a friendly, believable hook. 2. Build trust over several messages. 3. Create a false sense of urgency. 4. Ask for personal info. 5. Finally, ask for the 'kill shot' (e.g., OTP, UPI pin, or a test payment/registration fee). Each turn must have 2-3 'userOptions'. Make them nuanced and tricky. The 'wrong' options should sound helpful or concerned. The 'correct' options should be skeptical. The 'cyberTip' must be a short, valuable, educational tip related to the correct answer. The 'wrongFeedback' must be frank and educational. Random seed: ${Math.random()}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemInstruction }] },
+                generationConfig: { responseMimeType: "application/json", responseSchema: gameSchema, "temperature": 1.0, "topK": 1, "topP": 1 }
+            };
+            
+            try {
+                const jsonText = await callGemini(payload);
+                const parsedResponse = JSON.parse(jsonText);
+                if (!parsedResponse.scenarios || parsedResponse.scenarios.length === 0) {
+                    throw new Error("No scenarios array returned from API.");
+                }
+                console.log(`Loaded ${parsedResponse.scenarios.length} scenarios from API.`);
+                return parsedResponse.scenarios; // Return the array of scenarios
+            } catch (e) {
+                console.error("Failed to fetch or parse Gemini scenario:", e);
+                return getFallbackScenarios(); // Return array of fallbacks
+            }
+        }
+
+        function getFallbackScenarios() {
+            console.log("Using fallback scenarios.");
+            // --- ALL FALLBACK SCENARIOS REDACTED FOR BREVITY ---
+            // (You will paste your large chat flow object here)
+            const jobScam = state.language === 'hi' ? {
+    "spammerName": "HR - ग्लोबल टेक सॉल्यूशंस",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"नमस्ते! क्या आप घर से आराम से काम करके प्रति सप्ताह ₹25,000 से ₹40,000 कमाना चाहेंगे? ग्लोबल टेक सॉल्यूशंस को डेटा एंट्री और कस्टमर सपोर्ट के लिए तत्काल रिमोट वर्कर्स की आवश्यकता है। कोई पूर्व अनुभव आवश्यक नहीं है! क्या आप रुचि रखते हैं?","userOptions":[{"text":"हाँ, यह बिल्कुल सही लगता है! मुझे पूरी जानकारी दें।","isCorrect":false},{"text":"यह सच होने के लिए बहुत अच्छा लग रहा है। कृपया मुझे आपकी कंपनी की आधिकारिक वेबसाइट का लिंक भेजें।","isCorrect":true}],"correctFeedback":"बहुत बढ़िया! आपने तुरंत पहला रेड फ्लैग पहचान लिया। एक वैध कंपनी हमेशा अपनी पहचान स्पष्ट रूप से साझा करेगी।","cyberTip":"'सच होने के लिए बहुत अच्छा' वाली भावना पर भरोसा करें। यह घोटालों का सबसे बड़ा संकेतक है।","wrongFeedback":"सावधान! घोटालेबाज आपके उत्साह का फायदा उठाते हैं। बिना सोचे-समझे हाँ कहने से आप उनकी 'संभावित शिकार' सूची में सबसे ऊपर आ जाते हैं।","wrongConsequence":"अलर्ट: आपका नंबर 'हाई-इंटरेस्ट लीड' के रूप में चिह्नित किया गया है।"},
+        {"messageId":2,"spammerMessage":"हमें आपकी रुचि पर खुशी हुई! हमारी कंपनी दुबई और सिंगापुर में आधारित एक तेजी से बढ़ती हुई टेक फर्म है। हमारी वेबसाइट currently under renovation है, लेकिन आप हमारे कार्यों के बारे में हमारे LinkedIn पेज पर जान सकते हैं। सबसे पहले, क्या आप हमें अपना पूरा नाम और ईमेल पता भेज सकते हैं ताकि हम आपके लिए एप्लीकेशन फॉर्म तैयार कर सकें?","userOptions":[{"text":"ज़रूर, मेरा नाम [नाम] है और ईमेल [ईमेल] है।","isCorrect":false},{"text":"अगर वेबसाइट अपडेट हो रही है, तो क्या आप मुझे कंपनी का LinkedIn पेज भेज सकते हैं? मैं पहले उसे चेक करना चाहूंगा।","isCorrect":true}],"correctFeedback":"शानदार! 'वेबसाइट मेंटेनेंस' एक क्लासिक बहाना है। आपने सही ढंग से सोशल मीडिया प्रूफ की मांग की।","cyberTip":"कभी भी अपनी व्यक्तिगत जानकारी (PII) किसी अनजान व्यक्ति को तब तक न दें जब तक आप उनकी पहचान पूरी तरह से सत्यापित न कर लें।","wrongFeedback":"ओह नहीं! आपने अभी-अभी अपनी बुनियादी पहचान जानकारी दे दी है। अब वे आपको और अधिक विश्वसनीय, पर्सनलाइज्ड फ़िशिंग मैसेज भेजने के लिए इसका उपयोग करेंगे।","wrongConsequence":"अलर्ट: आपका नाम और ईमेल 'सक्रिय लीड' के रूप में डेटाबेस में दर्ज किया गया।"},
+        {"messageId":3,"spammerMessage":"धन्यवाद! हमने आपके लिए एक एप्लीकेशन फॉर्म तैयार किया है। कृपया इस लिंक पर क्लिक करें और फॉर्म भरें: bit.ly/global-tech-hiring। इसमें आपके बेसिक डिटेल्स, एजुकेशनल बैकग्राउंड और एक आपातकालीन संपर्क नंबर की आवश्यकता होगी।","userOptions":[{"text":"ठीक है, मैं अभी फॉर्म भरता हूँ।","isCorrect":false},{"text":"मैं किसी छोटे URL (shortlink) पर क्लिक नहीं करूंगा। क्या आप मुझे सीधा, पूरा वेब एड्रेस दे सकते हैं?","isCorrect":true}],"correctFeedback":"बिल्कुल सही! Shortlinks (जैसे bit.ly) अक्सर असली वेबसाइट के URL को छिपाने के लिए इस्तेमाल किए जाते हैं।","cyberTip":"किसी भी Shortlink पर क्लिक करने से पहले, लिंक प्रिव्यू टूल्स का उपयोग करके या मैसेज भेजने वाले से पूर्ण URL मांगकर उसकी जाँच अवश्य करें।","wrongFeedback":"आप एक नकली लॉगिन पेज पर पहुंच गए हैं जो कंपनी के असली पेज जैसा दिखता है। आपने जो डेटा डाला है, वह सीधे स्कैमर्स के डेटाबेस में चला गया है।","wrongConsequence":"अलर्ट: आपका पता, शैक्षिक इतिहास और आपातकालीन संपर्क नंबर हैकर्स को बेच दिया गया है।"},
+        {"messageId":4,"spammerMessage":"बधाई! आपका एप्लीकेशन शॉर्टलिस्ट किया गया है! हमारे HR हेड आपसे आज शाम 7:00 बजे एक QUICK WhatsApp कॉल पर बात करना चाहते हैं। क्या यह समय सुविधाजनक है? यह अवसर बहुत जल्दी भरा जा सकता है, इसलिए तुरंत पुष्टि करें।","userOptions":[{"text":"हाँ, बिल्कुल! मैं 7:00 बजे तैयार रहूंगा। तुरंत इंटरव्यू का मौका मिलना बहुत अच्छा है।","isCorrect":false},{"text":"एक फॉर्मल इंटरव्यू ईमेल के माध्यम से शेड्यूल किया जाना चाहिए, WhatsApp कॉल पर नहीं। क्या आप एक कैलेंडर इनविटेशन भेज सकते हैं?","isCorrect":true}],"correctFeedback":"सही कदम! आपने 'अर्जेंसी' और 'फियर ऑफ मिसिंग आउट' (FOMO) के मनोवैज्ञानिक दबाव को पहचान लिया।","cyberTip":"घोटालेबाज आपको तार्किक सोचने का समय दिए बिना जल्दबाजी में फैसला लेने के लिए मजबूर करते हैं। हमेशा समय निकालें।","wrongFeedback":"आपने जल्दबाजी में कार्य करके उनकी रणनीति को कामयाब होने दिया। एक अनौपचारिक कॉल आपको और अधिक आरामदायक महसूस कराएगी और आपकी सुरक्षा सतर्कता कम कर देगी।","wrongConsequence":"अलर्ट: आपने 'इंटरव्यू' की पुष्टि कर दी है। स्कैमर अब आपको कॉल करके और भी अधिक व्यक्तिगत जानकारी निकालने की कोशिश करेंगे।"},
+        {"messageId":5,"spammerMessage":"आपका इंटरव्यू बहुत अच्छा रहा! हम आपको 'जूनियर डेटा एनालिस्ट' का पद दे रहे हैं! अंतिम चरण: हमें आपके लिए आधिकारिक आईडी कार्ड, सॉफ्टवेयर लाइसेंस और प्रशिक्षण सामग्री जारी करने के लिए एक छोटा, पूरी तरह से वापस किया जाने वाला सुरक्षा जमा (₹2,499) प्राप्त करने की आवश्यकता है। यह राशि आपके पहले वेतन में वापस कर दी जाएगी।","userOptions":[{"text":"यह तार्किक लगता है। मैं UPI के माध्यम से भुगतान कैसे करूं?","isCorrect":false},{"text":"मुझे नौकरी शुरू करने के लिए पैसे क्यों देने पड़ रहे हैं? यह एक बहुत बड़ा रेड फ्लैग है। मैं भुगतान नहीं करूंगा।","isCorrect":true}],"correctFeedback":"बिल्कुल सही! आपने 'अडवांस-फी स्कैम' को सफलतापूर्वक पहचान लिया। एक वैध नियोक्ता आपको काम देने के लिए कभी भी पैसे नहीं मांगेगा।","cyberTip":"नौकरी पाने के लिए कभी भी भुगतान न करें। 'सिक्योरिटी डिपॉजिट', 'ट्रेनिंग फी', 'बैकग्राउंड चेक फी' - ये सभी घोटाले के सामान्य नाम हैं।","wrongFeedback":"आपने भुगतान कर दिया! यह राशि अब जा चुकी है। वे या तो गायब हो जाएंगे या आपसे और पैसे निकालने के लिए एक नया बहाना बनाएंगे।","wrongConsequence":"अलर्ट: ₹2,499 का भुगतान स्कैमर के UPI आईडी पर सफलतापूर्वक कर दिया गया है।"},
+        {"messageId":6,"spammerMessage":"भुगतान प्राप्त हो गया है! अब हमें आपको अपने पेरोल सिस्टम में जोड़ने की आवश्यकता है। कृपया इस 'सिक्योर कंपनी पोर्टल' (लिंक: global-tech-payroll.in) पर लॉग इन करें और अपना बैंक खाता विवरण, आधार कार्ड नंबर और PAN कार्ड नंबर दर्ज करें ताकि हम आपका पहला वेतन जमा कर सकें।","userOptions":[{"text":"समझ गया। मैं अपना बैंक और आधार विवरण अभी दर्ज करता हूँ।","isCorrect":false},{"text":"मैं किसी अज्ञात लिंक पर अपनी संवेदनशील वित्तीय और पहचान जानकारी कभी नहीं डालूंगा। यह एक स्पष्ट फ़िशिंग और आइडेंटिटी थेट का प्रयास है।","isCorrect":true}],"correctFeedback":"खतरा टल गया! आपने फ़िशिंग लिंक और आइडेंटिटी थेट के गंभीर जोखिम को पहचान लिया।","cyberTip":"किसी भी वेबसाइट पर लॉगिन क्रेडेंशियल्स या पर्सनल डॉक्यूमेंट नंबर कभी न डालें, जब तक कि आप 100% सुनिश्चित न हों कि वह वैध है।","wrongFeedback":"गेम ओवर! आपने अभी-अभी अपनी सभी संवेदनशील जानकारी एक नकली वेबसाइट पर डाल दी है। स्कैमर्स के पास अब आपकी पूरी वित्तीय और पहचान की कुंजी है।","wrongConsequence":"अलर्ट: आपकी पहचान चोरी हो गई है। आपके बैंक खाते से ₹45,000 निकाल लिए गए हैं। आपके PAN का उपयोग फर्जी लोन के लिए किया जा रहा है।"},
+        {"messageId":7,"spammerMessage":"हमें आपके द्वारा दिए गए विवरणों में एक त्रुटि मिली है। आपके बैंक खाते में पहला वेतन जमा करने में असमर्थ। कृपया तुरंत ₹5,000 का 'अकाउंट वेरिफिकेशन चार्ज' भेजें ताकि लेन-देन सफल हो सके। यह राशि भी वापस कर दी जाएगी।","userOptions":[{"text":"ठीक है, मैं अभी भुगतान करता हूँ। मैं अपना पहला वेतन प्राप्त करना चाहता हूँ।","isCorrect":false},{"text":"यह एक और झूठा बहाना है! मैं और भुगतान नहीं करूंगा और तुरंत अपने बैंक से संपर्क करूंगा।","isCorrect":true}],"correctFeedback":"शाबाश! आपने स्कैम के एस्केलेशन पैटर्न को पहचान लिया। एक बार जब वे आपसे पैसे ले लेते हैं, तो वे और अधिक मांगते रहेंगे।","cyberTip":"अगर आप एक बार भुगतान कर देते हैं, तो स्कैमर आपको और पैसे देने के लिए नए-नए बहाने बनाते रहेंगे। इसे 'सुनामी स्कैम' कहा जाता है।","wrongFeedback":"दुर्भाग्य से, आपने फिर से भुगतान कर दिया। यह चक्र तब तक चलता रहेगा जब तक आपका सारा पैसा खत्म नहीं हो जाता या आपको एहसास नहीं हो जाता कि आप घोटाले का शिकार हो गए हैं।","wrongConsequence":"अलर्ट: अतिरिक्त ₹5,000 का भुगतान किया गया। कुल नुकसान: ₹7,499। आपका नंबर 'आसान टार्गेट' के रूप में चिह्नित किया गया है।"},
+        {"messageId":8,"spammerMessage":"(नए नंबर से) नमस्ते, मैं ग्लोबल टेक सॉल्यूशंस के साइबर फ्रॉड डिपार्टमेंट से हूं। हमें पता चला है कि एक धोखाधड़ी वाली टीम ने हमारे नाम का इस्तेमाल किया है। हम पीड़ितों की मदद कर रहे हैं। क्या आपने उन्हें कोई पैसा या व्यक्तिगत जानकारी दी है? हम आपके फंड रिकवर करवाने और क्रेडिट मुफ़्त लॉक करवाने में मदद कर सकते हैं, बस एक छोटा सा 'सर्विस चार्ज' देकर।","userOptions":[{"text":"हाँ, मैं शिकार हुआ हूँ! कृपया मेरी मदद करें। सर्विस चार्ज कितना है?","isCorrect":false},{"text":"यह एक 'रिकवरी स्कैम' है! आप वही लोग हो जिन्होंने मुझे पहले धोखा दिया था, या कोई दूसरा जो मेरी मुसीबत का फायदा उठा रहा है। मैं अब सीधे साइबर क्राइम पोर्टल पर रिपोर्ट दर्ज करूंगा।","isCorrect":true}],"correctFeedback":"अद्भुत सतर्कता! आपने एक और स्तर के घोटाले को पहचान लिया। स्कैम के शिकार लोगों को ढूंढकर उनसे पैसे 'रिकवर' करवाने का वादा करके फिर से ठगना ही रिकवरी स्कैम है।","cyberTip":"अगर आप किसी घोटाले का शिकार हो जाते हैं, तो तुरंत अपने बैंक को सूचित करें और आधिकारिक साइबर क्राइम पोर्टल (cybercrime.gov.in) पर रिपोर्ट दर्ज करें। किसी भी निजी 'रिकवरी एजेंट' पर भरोसा न करें।","wrongFeedback":"दुर्भाग्य से, आप एक और जाल में फंस गए हैं। आपने अपने पैसे वापस पाने के लिए और पैसे दे दिए। यह चक्र चलता रह सकता है।","wrongConsequence":"अलर्ट: आपने 'रिकवरी सर्विस चार्ज' के रूप में अतिरिक्त ₹5,000 का भुगतान किया है। आपका कोई पैसा वापस नहीं आएगा। कुल नुकसान: ₹12,499。"}
+    ]
+} : {
+    "spammerName": "HR - Global Tech Solutions",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"Hello! Would you like to earn ₹25,000 to ₹40,000 per week working comfortably from home? Global Tech Solutions needs immediate remote workers for data entry and customer support. No prior experience required! Are you interested?","userOptions":[{"text":"Yes, this sounds perfect! Please give me all the details.","isCorrect":false},{"text":"This sounds too good to be true. Please send me the link to your company's official website.","isCorrect":true}],"correctFeedback":"Excellent! You immediately recognized the first red flag. A legitimate company will always share their identity clearly.","cyberTip":"Trust the 'too good to be true' feeling. It's the biggest indicator of scams.","wrongFeedback":"Careful! Scammers take advantage of your enthusiasm. Saying yes without thinking puts you at the top of their 'potential victim' list.","wrongConsequence":"ALERT: Your number has been marked as 'High-Interest Lead'."},
+        {"messageId":2,"spammerMessage":"We're happy about your interest! Our company is a fast-growing tech firm based in Dubai and Singapore. Our website is currently under renovation, but you can learn about our work on our LinkedIn page. First, can you send us your full name and email address so we can prepare an application form for you?","userOptions":[{"text":"Sure, my name is [name] and email is [email].","isCorrect":false},{"text":"If the website is being updated, can you send me the company's LinkedIn page? I'd like to check that first.","isCorrect":true}],"correctFeedback":"Fantastic! 'Website maintenance' is a classic excuse. You correctly asked for social media proof.","cyberTip":"Never share your personal information (PII) with any unknown person until you've fully verified their identity.","wrongFeedback":"Oh no! You just gave away your basic identity information. They will now use this to send you more credible, personalized phishing messages.","wrongConsequence":"ALERT: Your name and email have been recorded in the database as 'Active Lead'."},
+        {"messageId":3,"spammerMessage":"Thank you! We've prepared an application form for you. Please click this link and fill out the form: bit.ly/global-tech-hiring. It will require your basic details, educational background, and an emergency contact number.","userOptions":[{"text":"Okay, I'll fill out the form right away.","isCorrect":false},{"text":"I won't click on any short URL (shortlink). Can you give me the direct, full web address?","isCorrect":true}],"correctFeedback":"Absolutely correct! Shortlinks (like bit.ly) are often used to hide the real website URL.","cyberTip":"Always check any shortlink before clicking by using link preview tools or asking the sender for the full URL.","wrongFeedback":"You reached a fake login page that looks like the company's real page. The data you entered has gone directly to the scammers' database.","wrongConsequence":"ALERT: Your address, educational history, and emergency contact number have been sold to hackers."},
+        {"messageId":4,"spammerMessage":"Congratulations! Your application has been shortlisted! Our HR Head wants to talk to you on a QUICK WhatsApp call today at 7:00 PM. Is this time convenient? This opportunity could be filled very quickly, so confirm immediately.","userOptions":[{"text":"Yes, absolutely! I'll be ready at 7:00 PM. Getting an interview opportunity immediately is great.","isCorrect":false},{"text":"A formal interview should be scheduled via email, not WhatsApp call. Can you send a calendar invitation?","isCorrect":true}],"correctFeedback":"Right step! You recognized the psychological pressure of 'urgency' and 'fear of missing out' (FOMO).","cyberTip":"Scammers force you to make quick decisions without giving you time to think logically. Always take your time.","wrongFeedback":"You let their strategy succeed by acting hastily. An informal call will make you feel more comfortable and reduce your security vigilance.","wrongConsequence":"ALERT: You have confirmed the 'interview'. Scammers will now try to extract more personal information by calling you."},
+        {"messageId":5,"spammerMessage":"Your interview went very well! We are offering you the position of 'Junior Data Analyst'! Final step: We need to receive a small, fully refundable security deposit (₹2,499) to issue your official ID card, software license, and training materials. This amount will be refunded with your first salary.","userOptions":[{"text":"This seems logical. How do I pay via UPI?","isCorrect":false},{"text":"Why do I have to pay money to start a job? This is a huge red flag. I won't pay.","isCorrect":true}],"correctFeedback":"Absolutely correct! You successfully identified the 'advance-fee scam'. A legitimate employer will never ask you for money to give you work.","cyberTip":"Never pay to get a job. 'Security deposit', 'training fee', 'background check fee' - these are all common names for scams.","wrongFeedback":"You made the payment! This money is now gone. They will either disappear or create a new excuse to extract more money from you.","wrongConsequence":"ALERT: ₹2,499 payment successfully made to scammer's UPI ID."},
+        {"messageId":6,"spammerMessage":"Payment received! Now we need to add you to our payroll system. Please log in to this 'Secure Company Portal' (link: global-tech-payroll.in) and enter your bank account details, Aadhaar card number, and PAN card number so we can deposit your first salary.","userOptions":[{"text":"Understood. I'll enter my bank and Aadhaar details now.","isCorrect":false},{"text":"I will never enter my sensitive financial and identity information on any unknown link. This is a clear phishing and identity theft attempt.","isCorrect":true}],"correctFeedback":"Danger averted! You recognized the serious risk of phishing link and identity theft.","cyberTip":"Never enter login credentials or personal document numbers on any website unless you are 100% sure it's legitimate.","wrongFeedback":"Game over! You just entered all your sensitive information on a fake website. Scammers now have the complete key to your financial and identity information.","wrongConsequence":"ALERT: Your identity has been stolen. ₹45,000 has been withdrawn from your bank account. Your PAN is being used for fake loans."},
+        {"messageId":7,"spammerMessage":"We found an error in the details you provided. Unable to deposit first salary into your bank account. Please immediately send ₹5,000 as 'Account Verification Charge' to make the transaction successful. This amount will also be refunded.","userOptions":[{"text":"Okay, I'll make the payment right now. I want to receive my first salary.","isCorrect":false},{"text":"This is another false excuse! I won't make any more payments and will contact my bank immediately.","isCorrect":true}],"correctFeedback":"Well done! You recognized the escalation pattern of the scam. Once they get money from you, they will keep asking for more.","cyberTip":"If you make one payment, scammers will keep inventing new excuses to get you to pay more money. This is called the 'tsunami scam'.","wrongFeedback":"Unfortunately, you made another payment. This cycle will continue until all your money is gone or you realize you've been scammed.","wrongConsequence":"ALERT: Additional ₹5,000 payment made. Total loss: ₹7,499. Your number has been marked as 'Easy Target'."},
+        {"messageId":8,"spammerMessage":"(From new number) Hello, I'm from the Cyber Fraud Department of Global Tech Solutions. We've discovered that a fraudulent team has used our name. We are helping the victims. Did you give them any money or personal information? We can help you recover your funds and get your credit locked for free, just by paying a small 'service charge'.","userOptions":[{"text":"Yes, I've been victimized! Please help me. How much is the service charge?","isCorrect":false},{"text":"This is a 'recovery scam'! You're the same people who cheated me before, or someone else taking advantage of my trouble. I'll now file a report directly on the cyber crime portal.","isCorrect":true}],"correctFeedback":"Amazing vigilance! You recognized another level of scam. Recovery scam is cheating people who have already been scammed by promising to 'recover' their money.","cyberTip":"If you become a victim of a scam, immediately notify your bank and file a report on the official cyber crime portal (cybercrime.gov.in). Don't trust any private 'recovery agents'.","wrongFeedback":"Unfortunately, you fell into another trap. You paid more money to get your money back. This cycle could continue.","wrongConsequence":"ALERT: You have paid an additional ₹5,000 as 'Recovery Service Charge'. None of your money will be returned. Total loss: ₹12,499。"}
+    ]
+};
+
+const kycScam = state.language === 'hi' ? {
+    "spammerName": "एसबीआई ग्राहक सेवा",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"अलर्ट: आपके एसबीआई खाते की केवाईसी अपडेट करने की आवश्यकता है। अपडेट न करने पर आपका खाता निलंबित कर दिया जाएगा। अपडेट करने के लिए तुरंत इस लिंक पर क्लिक करें: sbi-kyc-update.com","userOptions":[{"text":"ओह नहीं! मैं तुरंत अपनी केवाईसी अपडेट करता हूँ।","isCorrect":false},{"text":"यह संदेहजनक लगता है। मैं आधिकारिक एसबीआई ऐप या वेबसाइट से सीधे संपर्क करूंगा।","isCorrect":true}],"correctFeedback":"बहुत अच्छा! आपने फ़िशिंग का पहला संकेत पहचान लिया। बैंक कभी भी केवाईसी अपडेट के लिए लिंक के साथ एसएमएस नहीं भेजते।","cyberTip":"कभी भी किसी एसएमएस या ईमेल में दिए गए लिंक पर क्लिक न करें। हमेशा आधिकारिक वेबसाइट या ऐप पर सीधे जाएं।","wrongFeedback":"आप एक नकली लॉगिन पेज पर पहुंच गए हैं जो एसबीआई के असली पेज जैसा दिखता है।","wrongConsequence":"अलर्ट: आपने अपना नेट बैंकिंग यूजर आईडी और पासवर्ड दर्ज किया है।"},
+        {"messageId":2,"spammerMessage":"आपके खाते को निलंबित होने से बचाने के लिए तुरंत कार्रवाई करें। कृपया अपना डेबिट कार्ड नंबर, सीवीवी और एक्सपायरी डेट दर्ज करें: sbi-secure-verification.in","userOptions":[{"text":"मैं अपना कार्ड विवरण दर्ज करता हूँ ताकि मेरा खाता ब्लॉक न हो।","isCorrect":false},{"text":"मैं कभी भी अपना सीवीवी किसी को नहीं बताऊंगा! यह एक स्पष्ट स्कैम है।","isCorrect":true}],"correctFeedback":"उत्कृष्ट! सीवीवी कभी भी किसी के साथ साझा नहीं करना चाहिए, यहां तक कि बैंक भी इसे नहीं मांगता।","cyberTip":"आपका सीवीवी आपके डेबिट/क्रेडिट कार्ड का सबसे संवेदनशील हिस्सा है। इसे कभी किसी के साथ साझा न करें।","wrongFeedback":"आपने अपना पूरा कार्ड विवरण स्कैमर्स को दे दिया है।","wrongConsequence":"अलर्ट: आपके कार्ड से ₹8,000 का अनधिकृत लेनदेन हुआ है।"},
+        {"messageId":3,"spammerMessage":"केवाईसी सत्यापन अपर्याप्त बैलेंस के कारण विफल रहा। कृपया प्रक्रिया पूरी करने के लिए ₹1,999 सुरक्षित खाता संख्या XXXX-XXXX-7890 में स्थानांतरित करें। यह राशि तुरंत वापस कर दी जाएगी।","userOptions":[{"text":"मैं केवाईसी पूरा करने के लिए तुरंत राशि ट्रांसफर करूंगा।","isCorrect":false},{"text":"यह बेतुका है! बैंक केवाईसी के लिए कभी भी पैसे ट्रांसफर करने को नहीं कहते। मैं इसे बैंक को रिपोर्ट कर रहा हूं।","isCorrect":true}],"correctFeedback":"उत्तम! आपने केवाईसी धोखाधड़ी में अग्रिम शुल्क स्कैम पैटर्न को पहचान लिया।","cyberTip":"केवाईसी अपडेट हमेशा मुफ्त होते हैं। भुगतान की कोई भी मांग 100% स्कैम है।","wrongFeedback":"आपने एक स्कैमर के खाते में पैसा ट्रांसफर कर दिया।","wrongConsequence":"अलर्ट: ₹1,999 धोखाधड़ी वाले खाते में स्थानांतरित। कुल नुकसान: ₹9,999।"},
+        {"messageId":4,"spammerMessage":"आपकी केवाईसी 90% पूरी हो चुकी है। अंतिम चरण: अपनी पहचान सत्यापित करने के लिए अपने फोन पर प्राप्त ओटीपी साझा करें।","userOptions":[{"text":"यह रहा ओटीपी: 784512","isCorrect":false},{"text":"मैं ओटीपी कभी किसी के साथ साझा नहीं करूंगा! यह स्कैम का अंतिम चरण है।","isCorrect":true}],"correctFeedback":"शानदार! ओटीपी वह अंतिम चाबी है जिसकी स्कैमर्स को आपका खाता खाली करने के लिए आवश्यकता होती है।","cyberTip":"ओटीपी आपके बैंक वॉल्ट की चाबी की तरह है। इसे कभी किसी के साथ साझा न करें!","wrongFeedback":"आपने ओटीपी साझा कर दिया! स्कैमर्स के पास अब आपके खाते की पूरी पहुंच है।","wrongConsequence":"अलर्ट: आपका बैंक खाता खाली कर दिया गया है। सभी फंड अज्ञात खाते में स्थानांतरित।"},
+        {"messageId":5,"spammerMessage":"अत्यावश्यक: केवाईसी अनुपालन न होने के कारण आपका खाता 30 मिनट में स्थायी रूप से ब्लॉक कर दिया जाएगा। अंतिम मौका: सत्यापन पूरा करने के लिए लिंक पर क्लिक करें।","userOptions":[{"text":"मैं वास्तव में डर गया हूं! मुझे जल्दी से सत्यापन पूरा करने दो।","isCorrect":false},{"text":"यह डर फैलाने की रणनीति है। मैं उनकी वेबसाइट से बैंक की आधिकारिक ग्राहक सेवा नंबर पर कॉल कर रहा हूं।","isCorrect":true}],"correctFeedback":"बहुत बढ़िया! आपने स्कैमर्स द्वारा इस्तेमाल की जाने वाली मनोवैज्ञानिक दबाव रणनीति को पहचान लिया।","cyberTip":"स्कैमर्स आपको बिना सोचे समझे कार्य करने के लिए झूठी जरूरत पैदा करते हैं। हमेशा आधिकारिक चैनलों के माध्यम से सत्यापित करें।","wrongFeedback":"आप डर की रणनीति में फंस गए और अधिक जानकारी प्रदान की।","wrongConsequence":"अलर्ट: आपकी व्यक्तिगत जानकारी डार्क वेब डेटाबेस में जोड़ दी गई है।"},
+        {"messageId":6,"spammerMessage":"अंतिम चेतावनी: आपके एसबीआई खाते का निलंबन प्रक्रिया में है। इसे रोकने के लिए, ₹2,999 की सुरक्षा जमा राशि का तत्काल भुगतान करें।","userOptions":[{"text":"मैं अपना खाता बचाने के लिए अभी भुगतान कर रहा हूं!","isCorrect":false},{"text":"मैं कुछ भी भुगतान नहीं कर रहा हूं। मैंने पहले ही बैंक को इस स्कैम के बारे में सूचित कर दिया है।","isCorrect":true}],"correctFeedback":"उत्कृष्ट निर्णय! स्कैमर्स के साथ कभी समझौता न करें।","cyberTip":"एक बार जब आप भुगतान करना शुरू करते हैं, तो स्कैमर्स अधिक पैसे मांगने के लिए नए कारण ईजाद करते रहेंगे।","wrongFeedback":"आपने डर के मारे अतिरिक्त पैसे का भुगतान किया।","wrongConsequence":"अलर्ट: अतिरिक्त ₹2,999 का नुकसान। कुल नुकसान: ₹12,998।"},
+        {"messageId":7,"spammerMessage":"(नया नंबर) नमस्ते, मैं एसबीआई साइबर सुरक्षा से हूं। हमने आपके खाते पर धोखाधड़ी के प्रयासों का पता लगाया है। आपके फंड को सुरक्षित करने के लिए हमें आपके सहयोग की आवश्यकता है।","userOptions":[{"text":"भगवान का शुक्र है! कृपया मेरे खाते को सुरक्षित करने में मेरी मदद करें।","isCorrect":false},{"text":"यह एक रिकवरी स्कैम है! आप वही स्कैमर्स हैं जो मुझे फिर से धोखा देने की कोशिश कर रहे हैं।","isCorrect":true}],"correctFeedback":"उत्कृष्ट जागरूकता! आपने स्कैम की दूसरी परत - रिकवरी धोखाधड़ी को पहचान लिया।","cyberTip":"स्कैमर्स अक्सर उन लोगों का शिकार करने के लिए सुरक्षा विशेषज्ञों का रूप धारण करते हैं जो पहले ही स्कैम का शिकार हो चुके हैं।","wrongFeedback":"आप रिकवरी स्कैम में फंस गए और अधिक संवेदनशील जानकारी साझा की।","wrongConsequence":"अलर्ट: आपकी पहचान पूरी तरह से समझौता हो गई है। सभी वित्तीय खाते जोखिम में हैं।"},
+        {"messageId":8,"spammerMessage":"हमने आपके खाते में ₹50,000 जमा कर दिए हैं जिन्हें धोखाधड़ी की राशि संदिग्ध है। अनलॉक करने के लिए, ₹5,000 सत्यापन शुल्क का भुगतान करें।","userOptions":[{"text":"मैं अपने ₹50,000 वापस पाने के लिए शुल्क का भुगतान करूंगा!","isCorrect":false},{"text":"इसका कोई मतलब नहीं है! मैं तुरंत साइबर अपराध शिकायत दर्ज कर रहा हूं।","isCorrect":true}],"correctFeedback":"उत्तम! आपने पूरे स्कैम चक्र को पहचाना और सही कार्रवाई की।","cyberTip":"हमेशा आधिकारिक अधिकारियों को स्कैम की रिपोर्ट करें। उन्हें स्वयं संभालने की कोशिश कभी न करें।","wrongFeedback":"आपने अंतिम 'शुल्क' का भुगतान किया और सब कुछ खो दिया।","wrongConsequence":"अंतिम अलर्ट: कुल वित्तीय नुकसान: ₹17,998। सभी व्यक्तिगत डेटा समझौता हो गया।"}
+    ]
+} : {
+    "spammerName": "SBI Customer Care",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"ALERT: Your SBI account KYC needs to be updated. Your account will be suspended if not updated. Click this link immediately to update: sbi-kyc-update.com","userOptions":[{"text":"Oh no! I'll update my KYC immediately.","isCorrect":false},{"text":"This seems suspicious. I'll contact the official SBI app or website directly.","isCorrect":true}],"correctFeedback":"Very good! You recognized the first sign of phishing. Banks never send SMS with links for KYC updates.","cyberTip":"Never click on links in any SMS or email. Always go directly to the official website or app.","wrongFeedback":"You reached a fake login page that looks like SBI's real page.","wrongConsequence":"ALERT: You have entered your net banking user ID and password."},
+        {"messageId":2,"spammerMessage":"Take immediate action to prevent your account from being suspended. Please enter your debit card number, CVV and expiry date: sbi-secure-verification.in","userOptions":[{"text":"I'll enter my card details so my account doesn't get blocked.","isCorrect":false},{"text":"I will never tell my CVV to anyone! This is a clear scam.","isCorrect":true}],"correctFeedback":"Excellent! CVV should never be shared with anyone, not even the bank asks for it.","cyberTip":"Your CVV is the most sensitive part of your debit/credit card. Never share it with anyone.","wrongFeedback":"You have given your complete card details to scammers.","wrongConsequence":"ALERT: ₹8,000 unauthorized transaction from your card."},
+        {"messageId":3,"spammerMessage":"KYC verification failed due to insufficient balance. Please transfer ₹1,999 to secure account number XXXX-XXXX-7890 to complete the process. This amount will be refunded immediately.","userOptions":[{"text":"I will transfer the amount immediately to complete KYC.","isCorrect":false},{"text":"This is ridiculous! Banks never ask for money transfers for KYC. I'm reporting this to the bank.","isCorrect":true}],"correctFeedback":"Perfect! You recognized the advance fee scam pattern in KYC fraud.","cyberTip":"KYC updates are always free. Any demand for payment is 100% scam.","wrongFeedback":"You transferred money to a scammer's account.","wrongConsequence":"ALERT: ₹1,999 transferred to fraud account. Total loss: ₹9,999."},
+        {"messageId":4,"spammerMessage":"Your KYC is 90% complete. Final step: Share the OTP received on your phone to verify your identity.","userOptions":[{"text":"Here is the OTP: 784512","isCorrect":false},{"text":"I will never share OTP with anyone! This is the final step of the scam.","isCorrect":true}],"correctFeedback":"Brilliant! OTP is the final key that scammers need to empty your account.","cyberTip":"OTP is like the key to your bank vault. Never share it with anyone, ever!","wrongFeedback":"You shared the OTP! Scammers now have complete access to your account.","wrongConsequence":"ALERT: Your bank account has been emptied. All funds transferred to unknown account."},
+        {"messageId":5,"spammerMessage":"URGENT: Your account will be permanently blocked in 30 minutes due to KYC non-compliance. Last chance: Click link to complete verification.","userOptions":[{"text":"I'm really scared! Let me complete the verification quickly.","isCorrect":false},{"text":"This is fear-mongering tactic. I'm calling bank's official customer care number from their website.","isCorrect":true}],"correctFeedback":"Well done! You identified the psychological pressure tactic used by scammers.","cyberTip":"Scammers create false urgency to make you act without thinking. Always verify through official channels.","wrongFeedback":"You fell for the fear tactic and provided more information.","wrongConsequence":"ALERT: Your personal information has been added to dark web databases."},
+        {"messageId":6,"spammerMessage":"Final Warning: Your SBI account suspension is in process. To stop this, make immediate payment of ₹2,999 as security deposit.","userOptions":[{"text":"I'm making the payment right now to save my account!","isCorrect":false},{"text":"I'm not paying anything. I've already informed the bank about this scam.","isCorrect":true}],"correctFeedback":"Excellent decision! Never negotiate with scammers.","cyberTip":"Once you start paying, scammers will keep inventing new reasons to demand more money.","wrongFeedback":"You paid additional money out of fear.","wrongConsequence":"ALERT: Additional ₹2,999 lost. Total loss: ₹12,998."},
+        {"messageId":7,"spammerMessage":"(New number) Hello, I'm from SBI Cyber Security. We detected fraud attempts on your account. We need your cooperation to secure your funds.","userOptions":[{"text":"Thank God! Please help me secure my account.","isCorrect":false},{"text":"This is a recovery scam! You're the same scammers trying to cheat me again.","isCorrect":true}],"correctFeedback":"Superb awareness! You identified the second layer of scam - recovery fraud.","cyberTip":"Scammers often pose as security experts to victimize people who already got scammed.","wrongFeedback":"You fell for the recovery scam and shared more sensitive information.","wrongConsequence":"ALERT: Your identity is completely compromised. All financial accounts at risk."},
+        {"messageId":8,"spammerMessage":"We've frozen ₹50,000 in your account suspected to be fraud money. To unlock, pay ₹5,000 verification fee.","userOptions":[{"text":"I'll pay the fee to get my ₹50,000 back!","isCorrect":false},{"text":"This makes no sense! I'm filing cyber crime complaint immediately.","isCorrect":true}],"correctFeedback":"Perfect! You recognized the complete scam cycle and took correct action.","cyberTip":"Always report scams to official authorities. Never try to handle them yourself.","wrongFeedback":"You paid the final 'fee' and lost everything.","wrongConsequence":"FINAL ALERT: Total financial loss: ₹17,998. All personal data compromised."}
+    ]
+};
+const prizeScam = state.language === 'hi' ? {
+    "spammerName": "Amazon Lottery Department",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"बधाई हो! आपने Amazon का ₹25,00,000 का ग्रैंड प्राइज जीता है! अपना पुरस्कार प्राप्त करने के लिए कृपया इस लिंक पर क्लिक करें और प्रोसेसिंग फीस का भुगतान करें: amazon-lottery-claim.com","userOptions":[{"text":"वाह! मैंने ₹25 लाख जीते! मैं तुरंत क्लेम करता हूँ।","isCorrect":false},{"text":"मैंने कोई लॉटरी नहीं खेली थी। यह एक स्पष्ट घोटाला है।","isCorrect":true}],"correctFeedback":"सही निर्णय! आपने लॉटरी स्कैम को पहचान लिया। किसी ऐसी प्रतियोगिता में आप कभी नहीं जीत सकते जिसमें आपने भाग ही नहीं लिया।","cyberTip":"याद रखें: पुरस्कार प्राप्त करने के लिए आपको कभी भी पैसे नहीं देने होते। अगर आपको पहले से कोई फीस देनी है, तो यह घोटाला है।","wrongFeedback":"आप एक नकली वेबसाइट पर पहुंच गए हैं जो Amazon जैसी दिखती है।","wrongConsequence":"अलर्ट: आपने ₹5,000 की 'प्रोसेसिंग फीस' का भुगतान किया है।"},
+        {"messageId":2,"spammerMessage":"बधाई! आपकी पुरस्कार राशि जारी करने के लिए, हमें आपके बैंक विवरण और ₹10,000 सुरक्षा जमा के रूप में चाहिए। यह आपके पुरस्कार के साथ वापस कर दिया जाएगा।","userOptions":[{"text":"मैं अपने बैंक विवरण साझा कर रहा हूं और भुगतान कर रहा हूं।","isCorrect":false},{"text":"मैं कोई बैंक विवरण साझा नहीं कर रहा। वैध कंपनियां पुरस्कारों के लिए सुरक्षा जमा नहीं मांगतीं।","isCorrect":true}],"correctFeedback":"उत्कृष्ट! आपने लॉटरी स्कैम में अग्रिम शुल्क पैटर्न को पहचान लिया।","cyberTip":"असली पुरस्कार जीतने के लिए आपकी ओर से किसी भुगतान की आवश्यकता नहीं होती। पैसे की कोई भी मांग स्कैम है।","wrongFeedback":"आपने अपने बैंक खाते की जानकारी साझा की और भुगतान किया।","wrongConsequence":"अलर्ट: ₹10,000 सुरक्षा जमा का भुगतान किया गया। बैंक विवरण समझौता हो गया।"},
+        {"messageId":3,"spammerMessage":"आपका पुरस्कार ट्रांसफर के लिए तैयार है! अंतिम चरण: अपनी पहचान सत्यापित करने और ₹25,00,000 प्राप्त करने के लिए अपने फोन पर प्राप्त ओटीपी साझा करें।","userOptions":[{"text":"यह रहा मेरा ओटीपी: 458712। कृपया मेरी पुरस्कार राशि जल्दी ट्रांसफर करें!","isCorrect":false},{"text":"मैं ओटीपी कभी साझा नहीं करूंगा! यह स्पष्ट रूप से बैंक धोखाधड़ी का प्रयास है।","isCorrect":true}],"correctFeedback":"शानदार! ओटीपी साझा करना किसी भी वित्तीय लेनदेन में अंतिम लाल झंडा है।","cyberTip":"ओटीपी केवल आपके लिए है। कोई भी वैध संगठन इसे कभी नहीं मांगेगा।","wrongFeedback":"आपने ओटीपी साझा कर दिया! स्कैमर्स के पास अब आपके बैंक खाते की पूरी पहुंच है।","wrongConsequence":"अलर्ट: आपका बैंक खाता खाली कर दिया गया है। सभी फंड बाहर स्थानांतरित।"},
+        {"messageId":4,"spammerMessage":"अत्यावश्यक: आपकी पुरस्कार राशि टैक्स क्लीयरेंस के कारण अटकी हुई है। अपना ₹25,00,000 तुरंत प्राप्त करने के लिए ₹15,000 अग्रिम कर के रूप में भुगतान करें।","userOptions":[{"text":"मैं अभी कर राशि का भुगतान कर रहा हूं! मुझे अपनी पुरस्कार राशि चाहिए।","isCorrect":false},{"text":"यह बेतुका है! पुरस्कार विजेता इस तरह अग्रिम कर का भुगतान नहीं करते। मैं आपको ब्लॉक कर रहा हूं।","isCorrect":true}],"correctFeedback":"बहुत बढ़िया! आपने स्कैमर्स के निरंतर पैसे की मांग के पैटर्न को पहचान लिया।","cyberTip":"स्कैमर्स आपके भुगतान बंद करने तक नई फीस और करों का आविष्कार करते रहेंगे।","wrongFeedback":"आपने बड़ा पुरस्कार पाने की उम्मीद में 'कर' राशि का भुगतान किया।","wrongConsequence":"अलर्ट: अतिरिक्त ₹15,000 का नुकसान। कुल नुकसान: ₹30,000।"},
+        {"messageId":5,"spammerMessage":"अंतिम सूचना: अनुपालन न होने के कारण आपका पुरस्कार 1 घंटे में रद्द कर दिया जाएगा। अंतिम मौका: अंतिम प्रोसेसिंग फीस के रूप में ₹25,000 का भुगतान करें।","userOptions":[{"text":"मैं ₹25 लाख नहीं खोना चाहता! मैं अंतिम भुगतान कर रहा हूं।","isCorrect":false},{"text":"बहुत हो गया! मैं इसे तुरंत साइबर क्राइम सेल में रिपोर्ट कर रहा हूं।","isCorrect":true}],"correctFeedback":"उत्तम निर्णय! आपने अधिक भुगतान करने से इनकार करके स्कैम चक्र को तोड़ दिया।","cyberTip":"'अंतिम मौका' रणनीति का उपयोग तात्कालिकता और चूकने के डर को पैदा करने के लिए किया जाता है।","wrongFeedback":"आपने अंतिम 'प्रोसेसिंग फीस' का भुगतान किया और अधिक पैसा खो दिया।","wrongConsequence":"अलर्ट: अतिरिक्त ₹25,000 का नुकसान। कुल नुकसान: ₹55,000।"},
+        {"messageId":6,"spammerMessage":"अच्छी खबर! आपकी पुरस्कार राशि स्वीकृत हो गई है। अंतिम सत्यापन के लिए हमें आपके आधार और पैन विवरण चाहिए।","userOptions":[{"text":"यह रहे मेरे आधार और पैन विवरण: XXXX XXXX 7890","isCorrect":false},{"text":"मैं अपने पहचान दस्तावेज अज्ञात लोगों के साथ साझा नहीं कर रहा।","isCorrect":true}],"correctFeedback":"उत्कृष्ट! आपने अपने पहचान दस्तावेजों को धोखाधड़ी करने वालों से बचा लिया।","cyberTip":"आपके आधार और पैन का दुरुपयोग पहचान की चोरी और फर्जी ऋण के लिए किया जा सकता है।","wrongFeedback":"आपने अपने पहचान दस्तावेज स्कैमर्स के साथ साझा कर दिए।","wrongConsequence":"अलर्ट: आपकी पहचान चोरी हो गई। आपके नाम पर फर्जी ऋण लिए जा सकते हैं।"},
+        {"messageId":7,"spammerMessage":"हम आयकर विभाग से हैं। हमने आपके खाते में फर्जी पुरस्कार राशि का पता लगाया है। कानूनी कार्रवाई से बचने के लिए ₹20,000 जुर्माना भरें।","userOptions":[{"text":"मैं कानूनी परेशानी नहीं चाहता! मैं जुर्माना भर रहा हूं।","isCorrect":false},{"text":"यह एक रिकवरी स्कैम है! मैं जानता हूं कि आप वही धोखाधड़ी करने वाले हैं।","isCorrect":true}],"correctFeedback":"शानदार! आपने सरकारी प्रतिरूपण रिकवरी स्कैम को पहचान लिया।","cyberTip":"सरकारी विभाग कभी भी संदेशों या कॉल के माध्यम से तत्काल भुगतान की मांग नहीं करते।","wrongFeedback":"आप रिकवरी स्कैम में फंस गए और अधिक पैसे का भुगतान किया।","wrongConsequence":"अलर्ट: अतिरिक्त ₹20,000 का नुकसान। कुल नुकसान: ₹75,000।"},
+        {"messageId":8,"spammerMessage":"आपकी पुरस्कार राशि आरबीआई द्वारा संदिग्ध गतिविधि के कारण जब्त कर ली गई है। फंड जारी करने के लिए ₹50,000 क्लीयरेंस चार्ज के रूप में भुगतान करें।","userOptions":[{"text":"मैं अपने ₹25 लाख पाने के लिए यह अंतिम राशि भरूंगा!","isCorrect":false},{"text":"यह पूरी तरह से पागलपन है! मैं सभी सबूतों के साथ आधिकारिक शिकायत दर्ज कर रहा हूं।","isCorrect":true}],"correctFeedback":"अद्भुत! आपने अंतिम जाल को पहचाना और सही कानूनी कार्रवाई की।","cyberTip":"स्कैम वार्तालाप के रिकॉर्ड हमेशा बनाए रखें और cybercrime.gov.in पर रिपोर्ट करें","wrongFeedback":"आपने अपनी 'पुरस्कार राशि' वापस पाने की उम्मीद में सबसे बड़ी राशि का भुगतान किया।","wrongConsequence":"अंतिम अलर्ट: कुल वित्तीय नुकसान: ₹1,25,000। पहचान पूरी तरह से समझौता हो गई।"}
+    ]
+} : {
+    "spammerName": "Amazon Lottery Department",
+    "chatFlow": [
+        {"messageId":1,"spammerMessage":"Congratulations! You have won Amazon's ₹25,00,000 grand prize! Please click this link and pay processing fee to claim your prize: amazon-lottery-claim.com","userOptions":[{"text":"Wow! I won ₹25 lakh! I'll claim immediately.","isCorrect":false},{"text":"I didn't play any lottery. This is clearly a scam.","isCorrect":true}],"correctFeedback":"Right decision! You recognized the lottery scam. You can never win a competition you didn't participate in.","cyberTip":"Remember: You never have to pay money to receive prizes. If you have to pay any fee upfront, it's a scam.","wrongFeedback":"You reached a fake website that looks like Amazon.","wrongConsequence":"ALERT: You have paid ₹5,000 'processing fee'."},
+        {"messageId":2,"spammerMessage":"Congratulations! To release your prize money, we need your bank details and ₹10,000 as security deposit. This will be refunded with your prize.","userOptions":[{"text":"I'm sharing my bank details and making the payment.","isCorrect":false},{"text":"I'm not sharing any bank details. Legitimate companies don't ask for security deposits for prizes.","isCorrect":true}],"correctFeedback":"Excellent! You identified the advance fee pattern in lottery scams.","cyberTip":"Real prize winnings never require any payment from your side. Any demand for money is scam.","wrongFeedback":"You shared your bank account information and made payment.","wrongConsequence":"ALERT: ₹10,000 security deposit paid. Bank details compromised."},
+        {"messageId":3,"spammerMessage":"Your prize is ready for transfer! Final step: Share the OTP received on your phone to verify your identity and receive ₹25,00,000.","userOptions":[{"text":"Here is my OTP: 458712. Please transfer my prize money quickly!","isCorrect":false},{"text":"I will never share OTP! This is clearly a bank fraud attempt.","isCorrect":true}],"correctFeedback":"Brilliant! OTP sharing is the ultimate red flag in any financial transaction.","cyberTip":"OTP is meant only for you. No legitimate organization will ever ask for it.","wrongFeedback":"You shared the OTP! Scammers now have complete access to your bank account.","wrongConsequence":"ALERT: Your bank account has been emptied. All funds transferred out."},
+        {"messageId":4,"spammerMessage":"Urgent: Your prize money is stuck due to tax clearance. Pay ₹15,000 as advance tax to receive your ₹25,00,000 immediately.","userOptions":[{"text":"I'm paying the tax amount right now! I want my prize money.","isCorrect":false},{"text":"This is ridiculous! Prize winners don't pay advance tax like this. I'm blocking you.","isCorrect":true}],"correctFeedback":"Well done! You recognized the continuous money demand pattern of scammers.","cyberTip":"Scammers will keep inventing new fees and taxes until you stop paying.","wrongFeedback":"You paid the 'tax' amount hoping to get the big prize.","wrongConsequence":"ALERT: Additional ₹15,000 lost. Total loss: ₹30,000."},
+        {"messageId":5,"spammerMessage":"Final Notice: Your prize will be cancelled in 1 hour due to non-compliance. Last chance: Pay ₹25,000 as final processing fee.","userOptions":[{"text":"I don't want to lose ₹25 lakh! I'm making the final payment.","isCorrect":false},{"text":"I've had enough! I'm reporting this to cyber crime cell immediately.","isCorrect":true}],"correctFeedback":"Perfect decision! You broke the scam cycle by refusing to pay more.","cyberTip":"The 'final chance' tactic is used to create urgency and fear of missing out.","wrongFeedback":"You paid the final 'processing fee' and lost more money.","wrongConsequence":"ALERT: Additional ₹25,000 lost. Total loss: ₹55,000."},
+        {"messageId":6,"spammerMessage":"Good news! Your prize money is approved. We need your Aadhaar and PAN details for final verification.","userOptions":[{"text":"Here are my Aadhaar and PAN details: XXXX XXXX 7890","isCorrect":false},{"text":"I'm not sharing my identity documents with unknown people.","isCorrect":true}],"correctFeedback":"Excellent! You protected your identity documents from fraudsters.","cyberTip":"Your Aadhaar and PAN can be misused for identity theft and fraudulent loans.","wrongFeedback":"You shared your identity documents with scammers.","wrongConsequence":"ALERT: Your identity stolen. Fraudulent loans may be taken in your name."},
+        {"messageId":7,"spammerMessage":"We are from Income Tax Department. We detected fraudulent prize money in your account. Pay ₹20,000 penalty to avoid legal action.","userOptions":[{"text":"I don't want legal trouble! I'm paying the penalty.","isCorrect":false},{"text":"This is a recovery scam! I know you're the same fraudsters.","isCorrect":true}],"correctFeedback":"Superb! You identified the government impersonation recovery scam.","cyberTip":"Government departments never demand immediate payments through messages or calls.","wrongFeedback":"You fell for the recovery scam and paid more money.","wrongConsequence":"ALERT: Additional ₹20,000 lost. Total loss: ₹75,000."},
+        {"messageId":8,"spammerMessage":"Your prize money has been seized by RBI due to suspicious activity. Pay ₹50,000 as clearance charge to release funds.","userOptions":[{"text":"I'll pay this final amount to get my ₹25 lakh!","isCorrect":false},{"text":"This is completely insane! I'm filing official complaint with all evidence.","isCorrect":true}],"correctFeedback":"Outstanding! You recognized the final trap and took correct legal action.","cyberTip":"Always maintain records of scam conversations and report to cybercrime.gov.in","wrongFeedback":"You paid the largest amount hoping to recover your 'prize money'.","wrongConsequence":"FINAL ALERT: Total financial loss: ₹1,25,000. Identity completely compromised."}
+    ]
+};
+
+
+            return [jobScam, kycScam, prizeScam  ]; // Return an array of scenarios
+        }
+
+        // --- FIREBASE & DATA ---
+        async function initFirebase() {
+            if (!FIREBASE_CONFIG || !FIREBASE_CONFIG.apiKey.includes("YOUR_")) {
+                // ... (rest of the logic)
+            }
+            try {
+                const app = initializeApp(FIREBASE_CONFIG);
+                state.db = getFirestore(app);
+                state.auth = getAuth(app);
+                // --- FIX: Use defined config appId ---
+                state.appId = FIREBASE_CONFIG.appId; 
+                if (!state.appId) {
+                    console.error("Firebase App ID is missing from config!");
+                    document.getElementById('app').innerHTML = renderLoadingScreen("Error: Config Missing AppID");
+                    return;
+                }
+                setLogLevel('Debug');
+    
+                onAuthStateChanged(state.auth, async (user) => {
+                    if (user) { state.userId = user.uid; } 
+                    else {
+                        try { await signInAnonymously(state.auth); return; } 
+                        catch (authError) { console.error("Anonymous auth failed:", authError); document.getElementById('app').innerHTML = renderLoadingScreen("Auth Error"); return; }
+                    }
+                    
+                    if (!state.isAuthReady && state.userId) {
+                        state.isAuthReady = true;
+                        await loadUserData(); // Loads user data AND checks if it's a new day
+                        
+                        // --- FIX: This check was incorrect, moved to render() ---
+                        // render(t('fetchSim')); // Show loading screen
+                        
+                        try {
+                            state.allScenarios = await fetchGameScenario();
+                        } catch (e) {
+                            console.error("Using fallback scenarios.", e);
+                            state.allScenarios = getFallbackScenarios();
+                        }
+
+                        // Find available scenarios
+                        const availableScenarios = state.allScenarios.map((sc, index) => ({...sc, originalIndex: index}))
+                                                                     .filter(sc => !state.playedScenarioIndices.includes(sc.originalIndex));
+
+                        if (availableScenarios.length === 0) {
+                            // All scenarios played.
+                            state.currentView = 'allComplete';
+                            render();
+                            return;
+                        }
+
+                        // Check if they played today
+                        if (state.lastPlayed) {
+                            const now = new Date();
+                            const last = new Date(state.lastPlayed);
+                            if (last.toDateString() === now.toDateString()) {
+                                // Played today, and there are scenarios left. Show dailyLimit screen.
+                                state.currentView = 'dailyLimit';
+                                render();
+                                return;
+                            }
+                        }
+                        
+                        // It's a new day or first play.
+                        // Check if we have user profile data.
+                        if (state.username && state.gender) {
+                            // We have data, select a scenario and go to intro
+                           selectNextScenario(availableScenarios); 
+state.currentView = 'call'; // MODIFIED: Skip intro, go directly to call
+render();
+                        } else {
+                            // No profile data, go to login screen.
+                            state.currentView = 'login';
+                            render();
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Error initializing Firebase:", error);
+                document.getElementById('app').innerHTML = renderLoadingScreen("Initialization Failed");
+            }
+        }
+
+        async function loadUserData() {
+            if (!state.db || !state.userId || !state.appId) return;
+            const docPath = `/artifacts/${state.appId}/users/${state.userId}/cyberGame/gameData`;
+            const docRef = doc(state.db, docPath);
+            try {
+                const docSnap = await getDoc(docRef);
+                if (docSnap.exists()) {
+                    const data = docSnap.data();
+                    state.username = data.username || null;
+                    state.gender = data.gender || null;
+                    state.lastPlayed = data.lastPlayed || null;
+                    state.playedScenarioIndices = data.playedScenarioIndices || [];
+                } else { console.log("No user data found for user:", state.userId); }
+
+                // Check if it's a new day
+                if (state.lastPlayed) {
+                    const now = new Date();
+                    const last = new Date(state.lastPlayed);
+                    if (last.toDateString() !== now.toDateString()) {
+                        // It's a new day, reset played scenarios
+                        state.playedScenarioIndices = [];
+                        console.log("New day detected, resetting played scenarios.");
+                    }
+                }
+
+            } catch (e) { console.error("Error loading user data:", e); }
+        }
+
+        async function saveUserData() {
+            if (!state.db || !state.userId || !state.appId) return;
+
+            // Add current scenario index to played list
+            if (state.currentGameIndex !== null && !state.playedScenarioIndices.includes(state.currentGameIndex)) {
+                state.playedScenarioIndices.push(state.currentGameIndex);
+            }
+
+            const docPath = `/artifacts/${state.appId}/users/${state.userId}/cyberGame/gameData`;
+            const docRef = doc(state.db, docPath);
+            const dataToSave = {
+                username: state.username,
+                gender: state.gender,
+                lastPlayed: new Date().toISOString(),
+                playedScenarioIndices: state.playedScenarioIndices // Save the updated list
+            };
+            try { await setDoc(docRef, dataToSave, { merge: true }); console.log("User data saved."); } 
+            catch (e) { console.error("Error saving user data:", e); }
+        }
+
+        // --- PARTICLE CANVAS ANIMATION (REDACTED for brevity) ---
+        function runParticleAnimation() {
+            const canvas = document.getElementById('particle-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+            function createParticle() {
+                const x = Math.random() * canvas.width; const y = Math.random() * canvas.height;
+                const size = Math.random() * 2 + 1;
+                const speedX = (Math.random() * 0.2) - 0.1; const speedY = (Math.random() * 0.2) - 0.1;
+                particles.push({ x, y, size, speedX, speedY });
+            }
+            for (let i = 0; i < 100; i++) { createParticle(); }
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < particles.length; i++) {
+                    let p = particles[i];
+                    p.x += p.speedX; p.y += p.speedY;
+                    if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
+                    if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
+                    ctx.fillStyle = 'rgba(100, 230, 255, 0.3)';
+                    ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fill();
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+   // --- INITIALIZATION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.addEventListener('click', () => audioManager.init(), { once: true });
+            
+            // --- NEW: Robust TTS Initialization ---
+            if ('speechSynthesis' in window) {
+                // Use the event-driven way
+                speechSynthesis.onvoiceschanged = initTTS;
+                // Also use the polling method as a fallback
+                initTTS();
+            }
+            
+render(); // Initial render for language selection
+            document.getElementById('close-scam-modal-btn').addEventListener('click', () => {
+                document.getElementById('scam-alert-modal').classList.add('hidden');
+            });
+        });
+        
+    </script>
+</body>
+</html>
