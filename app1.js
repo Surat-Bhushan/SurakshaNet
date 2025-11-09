@@ -43,16 +43,20 @@
                 statQuiz: "Quiz High Score",
                 statCall: "Call Sims Played",
                 played: "Played",
-                gameTitleCall: "Fake Call Simulation",
-                gameDescCall: "Can you outsmart a live scammer in a call?",
-                gameTitleQuiz: "Knowledge Quiz",
-                gameDescQuiz: "Test your cyber security knowledge.",
-                gameTitleAnalyzer: "Scam Analyzer",
-                gameDescAnalyzer: "Check suspicious messages or images.",
-                gameTitleVideo: "Learn with Videos",
-                gameDescVideo: "Watch short videos about common scams.",
-                gameTitleCards: "Learn New Words",
-                gameDescCards: "Flip cards to learn new cyber terms.",
+                gameTitleCall: "The Scammer's Call",
+    gameDescCall: "Can you outsmart a live scammer in a call?",
+
+    gameTitleQuiz: "Multilingual Quiz",
+    gameDescQuiz: "Test your cyber security knowledge.",
+
+    gameTitleVideo: "CyberRakshak",
+    gameDescVideo: "Watch interactive, scenario-based videos about common cyber threats.",
+
+    gameTitleCards: "JagruktaCards",
+    gameDescCards: "Flip cards to unveil data privacy & cyber hygiene tips.",
+
+    gameTitleAnalyzer: "HelpCircle",
+    gameDescAnalyzer: "Check suspicious content and get smart chat assistance."
             },
             hi: {
                 connecting: "सुरक्षा-नेट से कनेक्ट हो रहा है...",
@@ -71,15 +75,19 @@
                 statCall: "स्कैम कॉल खेले गए",
                 played: "खेला गया",
                 gameTitleCall: "स्कैम कॉल गेम",
-                gameDescCall: "क्या आप एक स्कैमर को कॉल पर हरा सकते हैं?",
-                gameTitleQuiz: "ज्ञान प्रश्नोत्तरी",
-                gameDescQuiz: "अपनी साइबर सुरक्षा जानकारी का परीक्षण करें।",
-                gameTitleAnalyzer: "स्कैम विश्लेषक",
-                gameDescAnalyzer: "संदिग्ध संदेशों या तस्वीरों की जाँच करें।",
-                gameTitleVideo: "वीडियो से सीखें",
-                gameDescVideo: "आम घोटालों के बारे में छोटे वीडियो देखें।",
-                gameTitleCards: "नए शब्द सीखें",
-                gameDescCards: "नए साइबर शब्द सीखने के लिए कार्ड पलटें।",
+    gameDescCall: "क्या आप एक स्कैमर को कॉल पर हरा सकते हैं?",
+
+    gameTitleQuiz: "बहुभाषी प्रश्नोत्तरी",
+    gameDescQuiz: "अपनी साइबर सुरक्षा जानकारी का परीक्षण करें।",
+
+    gameTitleVideo: "CyberRakshak",
+    gameDescVideo: "सामान्य साइबर खतरों पर इंटरएक्टिव वीडियो देखें।",
+
+    gameTitleCards: "JagruktaCards",
+    gameDescCards: "डेटा गोपनीयता और साइबर हाइजीन टिप्स जानने के लिए कार्ड पलटें।",
+
+    gameTitleAnalyzer: "HelpCircle",
+    gameDescAnalyzer: "संदिग्ध सामग्री की जांच करें और स्मार्ट सहायता प्राप्त करें।"
             }
         };
 
