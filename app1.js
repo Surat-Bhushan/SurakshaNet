@@ -80,13 +80,13 @@
     gameTitleQuiz: "बहुभाषी प्रश्नोत्तरी",
     gameDescQuiz: "अपनी साइबर सुरक्षा जानकारी का परीक्षण करें।",
 
-    gameTitleVideo: "CyberRakshak",
+    gameTitleVideo: "साइबर रक्षक",
     gameDescVideo: "सामान्य साइबर खतरों पर इंटरएक्टिव वीडियो देखें।",
 
-    gameTitleCards: "JagruktaCards",
+    gameTitleCards: "जागरूकता कार्ड्स",
     gameDescCards: "डेटा गोपनीयता और साइबर हाइजीन टिप्स जानने के लिए कार्ड पलटें।",
 
-    gameTitleAnalyzer: "HelpCircle",
+    gameTitleAnalyzer: "हेल्पसर्कल",
     gameDescAnalyzer: "संदिग्ध सामग्री की जांच करें और स्मार्ट सहायता प्राप्त करें।"
             }
         };
