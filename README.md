@@ -1,4 +1,4 @@
-# SurakshaNet
+<img width="6614" height="6614" alt="B229CF6F-9DCC-453F-9DB7-D6224C034257" src="https://github.com/user-attachments/assets/55e26f3c-e34c-4ade-9a83-b68f6f3f9321" /># SurakshaNet
 SurakshaNet is a gamified digital learning platform designed to create awareness about cyberattacks among rural adults. Through interactive video modules, scam simulations, quizzes, and mini-games, it builds essential skills in cyber safety, privacy, and misinformation detection — empowering rural India and building resilience against cyber threats.
 link: https://surakshanet-2025.web.app/
 # 5 Modules of SurakshaNet
@@ -23,3 +23,6 @@ link: https://surakshanetdei.web.app/multilingual_quiz.html
 3. AI integration
 4. Interactive, scenario-based and simulated learning modules.
 5. All the modules have been designed taking into consideration rural needs and cultural context.
+<img width="6614" height="6614" alt="B229CF6F-9DCC-453F-9DB7-D6224C034257" src="https://github.com/user-attachments/assets/ec3a9eed-a3f9-417d-ac64-d3289474f618" />
+
+
