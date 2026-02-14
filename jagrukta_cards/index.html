@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जागरूकता कार्ड्स</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="container">
+        <!-- Return to App Home Button -->
+        <button id="return-to-app-btn" class="cyber-btn return-btn" onclick="window.location.href='https://surakshanet-2025.web.app/'">
+            ऐप होम पर वापस जाएं
+        </button>
+        
+        <h1 class="cyber-title">जागरूकता कार्ड्स</h1>
+        
+        <!-- Home Screen -->
+        <div id="home-screen" class="screen active">
+            <p class="subtitle">साइबर सुरक्षा और डिजिटल जागरूकता के लिए एक मनोरंजक खेल</p>
+            <p class="domain-info white-text">यह खेल आपको दो महत्वपूर्ण क्षेत्रों में जागरूक बनाएगा:</p>
+            <div class="domains">
+                <div class="domain">डेटा और प्राइवेसी साक्षरता</div>
+                <div class="domain">साइबर स्वच्छता</div>
+            </div>
+            
+            <!-- Game Features Info -->
+            <div class="game-features">
+                <div class="feature">
+                    <span class="feature-icon">🎯</span>
+                    <span class="feature-text">हर 5 कार्ड्स के बाद क्विज</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔊</span>
+                    <span class="feature-text">ऑडियो सुविधा के साथ</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔄</span>
+                    <span class="feature-text">फिर से सुनने की सुविधा</span>
+                </div>
+            </div>
+            
+            <button id="start-btn" class="cyber-btn">खेल शुरू करें</button>
+        </div>
+        
+        <!-- Card Deck Screen -->
+        <div id="card-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress">कार्ड देखे गए: <span id="cards-seen">0</span>/15</div>
+                <button id="back-to-home-btn" class="cyber-btn small-btn">गेम होम पर जाएं</button>
+            </div>
+            <div class="card-grid" id="card-container">
+                <!-- Cards will be generated here -->
+            </div>
+        </div>
+        
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="cyber-panel">
+                <h2>आइए जाँचें कि आपने क्या सीखा!</h2>
+                <div class="quiz-question" id="quiz-question"></div>
+                <div class="quiz-options" id="quiz-options"></div>
+                <div class="feedback" id="quiz-feedback"></div>
+            </div>
+        </div>
+        
+        <!-- Completion Screen -->
+        <div id="completion-screen" class="screen">
+            <div class="cyber-panel">
+                <div class="completion-message">
+                    <p>बधाई हो! आपने सभी कार्ड देख लिए और बहुत कुछ सीखा 💪</p>
+                    <p>अब आप 'सुरक्षा हीरो' हैं!</p>
+                    <p>आप दोबारा खेल सकते हैं — अगली बार नए कार्ड्स आएँगे 🌟</p>
+                </div>
+                <button id="play-again-btn" class="cyber-btn">फिर से खेलें 🔁</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="bg-music" loop>
+        <source src="audio/bg.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="audio/click.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="start-sound">
+        <source src="audio/start.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fly-sound">
+        <source src="audio/fly.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="message-sound">
+        <source src="audio/message.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="right-sound">
+        <source src="audio/right.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wrong-sound">
+        <source src="audio/wrong.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="ending-sound">
+        <source src="audio/ending.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

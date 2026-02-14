@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚡ साइबर रक्षक ⚡</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <button class="app-home-btn" onclick="window.location.href='https://surakshanet-2025.web.app/'">
+        ऐप होम पर जाएं
+    </button>
+    
+    <div class="start-content">
+      <div class="game-logo">🛡️</div>
+      <h1 class="game-title">साइबर रक्षक</h1>
+      <p class="game-description">
+        साइबर रक्षक एक इंटरैक्टिव गेम है जो आपको साइबर धोखाधड़ी के विभिन्न परिदृश्यों से अवगत कराएगा। 
+        इस गेम के माध्यम से आप सीखेंगे कि कैसे साइबर अपराधियों के जाल में फंसने से बचा जा सकता है और 
+        डिजिटल दुनिया में सुरक्षित रहा जा सकता है। प्रत्येक परिदृश्य में, आपको एक वीडियो दिखाई जाएगी 
+        और फिर आपको सही निर्णय लेना होगा।
+      </p>
+      
+      <!-- Scenarios List -->
+      <div class="scenarios-list">
+        <h3>इस गेम में शामिल परिदृश्य:</h3>
+        <ul>
+          <li>ओटीपी कॉल</li>
+          <li>डिजिटल गिरफ्तारी</li>
+          <li>आधार लिंक कॉल</li>
+          <li>रिश्तेदार बनकर कॉल</li>
+          <li>ऐप डाउनलोड घोटाला</li>
+          <li>सरकारी योजना कॉल</li>
+          <li>लॉटरी घोटाला</li>
+          <li>डीपफेक धोखाधड़ी</li>
+          <li>रोमांस / रिश्ता घोटाला</li>
+        </ul>
+      </div>
+      
+      <button id="start-btn" class="btn-primary">
+        <i class="fas fa-play"></i> खेल शुरू करें
+      </button>
+    </div>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container" class="screen hidden">
+    <!-- Game Header with Progress and Controls -->
+    <div class="game-header">
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <div id="progress-text" class="progress-text">1/9</div>
+      </div>
+      <div class="header-buttons">
+        <button id="prev-btn" class="header-btn" disabled>
+          <i class="fas fa-backward"></i> पिछला
+        </button>
+        <button id="home-btn" class="header-btn">
+          <i class="fas fa-home"></i> होम
+        </button>
+        <div class="scenario-dropdown">
+          <select id="scenario-select" class="scenario-select">
+            <option value="0">ओटीपी कॉल</option>
+            <option value="1">डिजिटल गिरफ्तारी</option>
+            <option value="2">आधार लिंक कॉल</option>
+            <option value="3">रिश्तेदार बनकर कॉल</option>
+            <option value="4">ऐप डाउनलोड घोटाला</option>
+            <option value="5">सरकारी योजना कॉल</option>
+            <option value="6">लॉटरी घोटाला</option>
+            <option value="7">डीपफेक धोखाधड़ी</option>
+            <option value="8">रोमांस / रिश्ता घोटाला</option>
+          </select>
+        </div>
+        <button id="next-btn" class="header-btn" disabled>
+          <i class="fas fa-forward"></i> अगला
+        </button>
+      </div>
+    </div>
+
+    <!-- Scenario Intro Screen -->
+    <div id="scenario-intro" class="scenario-intro hidden">
+      <div class="intro-content">
+        <h2 id="intro-title" class="scenario-title">लॉटरी घोटाला</h2>
+        <p id="intro-description" class="scenario-description">
+          इस परिदृश्य में, आपको एक लॉटरी जीतने का ऑफर दिखाया जाएगा। 
+          आपका काम है सही निर्णय लेना और धोखाधड़ी से बचना।
+        </p>
+        <button id="continue-btn" class="btn-primary">जारी रखें</button>
+      </div>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+      <video id="scenario-video" class="video-box" playsinline></video>
+      
+      <!-- Video Controls -->
+      <div class="video-controls">
+        <button class="control-btn play-pause-btn">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="control-btn stop-btn">
+          <i class="fas fa-stop"></i>
+        </button>
+        <div class="volume-control">
+          <button class="control-btn volume-btn">
+            <i class="fas fa-volume-up"></i>
+          </button>
+          <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+        </div>
+      </div>
+    </div>
+
+    <!-- Question Container -->
+    <div id="question-container" class="question-container">
+      <div id="question-text" class="question-text">
+      इस स्थिति में आप क्या करेंगे?
+      </div>
+      <div class="options-container">
+        <button id="option-yes" class="option-btn">
+          <i class="fas fa-check-circle"></i> मैं सहमत हो जाउंगी/जाऊंगा
+        </button>
+        <button id="option-no" class="option-btn">
+          <i class="fas fa-times-circle"></i> मैं सहमत नहीं होउंगी/होऊंगा
+        </button>
+      </div>
+    </div>
+
+    <!-- Feedback Overlay -->
+    <div id="feedback-overlay" class="feedback-overlay">
+      <div id="feedback-text" class="feedback-text"></div>
+    </div>
+  </div>
+
+  <!-- End Game Screen -->
+<div id="end-screen" class="screen hidden">
+    <!-- ADD THE APP HOME BUTTON HERE -->
+    <button class="app-home-btn" onclick="window.location.href='https://surakshanet-2025.web.app/'">
+        ऐप होम पर जाएं
+    </button>
+    
+    <div class="end-content">
+        <h1 class="end-title">🎉 बधाई हो! 🎉</h1>
+        <p class="end-message">
+            आपने सभी परिदृश्य सफलतापूर्वक पूरे कर लिए हैं! आप एक सच्चे साइबर रक्षक बन गए हैं। 
+            अब आप साइबर धोखाधड़ी के विभिन्न तरीकों को पहचान सकते हैं और उनसे बच सकते हैं।
+        </p>
+        <button id="restart-btn" class="btn-primary">
+            <i class="fas fa-redo"></i> फिर से खेलें
+        </button>
+    </div>
+</div>
+
+  <!-- Audio Elements -->
+  <audio id="start-sound" src="assets/audio/start.mp3"></audio>
+  <audio id="right-sound" src="assets/audio/right.mp3"></audio>
+  <audio id="wrong-sound" src="assets/audio/wrong.mp3"></audio>
+  <audio id="ending-sound" src="assets/audio/ending.mp3"></audio>
+  <audio id="question-sound" src="assets/audio/question.mp3"></audio>
+  <audio id="click-sound" src="assets/audio/click.mp3"></audio>
+  <audio id="message-sound" src="assets/audio/message.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
