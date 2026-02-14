@@ -4,13 +4,13 @@ link: https://surakshanet-2025.web.app/
 # 5 Modules of SurakshaNet
 ## 1. CyberRakshak- 
 Collection of interactive, scenario-based video modules on major cyberthreats a rural indian might encounter.
-link: https://surat-bhushan.github.io/CyberRakshak/
+link: https://surakshanet-2025.web.app/cyber_rakshak
 ## 2. The Scammer's Call-
 Scam simulation to enable users to practice dodging a scam and build decision-making skills.
 link: https://surakshanetdei.web.app/fake_call.html
 ## 3. JagruktaCards-
 A fun flip-the-card game to unveil information bits on cyber hygiene and digital privacy.
-link: https://surat-bhushan.github.io/JagruktaCards/
+link: https://surakshanet-2025.web.app/jagrukta_cards
 ## 4. HelpCircle-
 AI-integrated scam analyser and smart chat assistance to empower rural India.
 link: https://surakshanetdei.web.app/help6.html
