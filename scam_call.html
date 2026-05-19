@@ -234,7 +234,6 @@ currentView: 'language', // MODIFIED: Skip language selection
                 this.synths.victory = new Tone.PolySynth(Tone.Synth).toDestination();
                 this.synths.newMission = new Tone.Synth({ oscillator: { type: "triangle8" }, envelope: { attack: 0.01, decay: 0.2, sustain: 0.1, release: 0.3 } }).toDestination();
                 this.loops.ringtone = new Tone.Loop((time) => { const ringSynth = new Tone.Synth().toDestination(); ringSynth.triggerAttackRelease("A4", "16n", time); ringSynth.triggerAttackRelease("E5", "16n", time + 0.2); ringSynth.triggerAttackRelease("A5", "16n", time + 0.4); }, "2n");
-                this.loops.typewrite = new Tone.Loop((time) => { const typeSynth = new Tone.NoiseSynth({ noise: { type: "white" }, envelope: { attack: 0.001, decay: 0.05, sustain: 0, release: 0.01 } }).toDestination(); typeSynth.triggerAttackRelease("32n", time); }, "32n");
                 this.loops.background = new Tone.MembraneSynth({ pitchDecay: 0.8, octaves: 10, oscillator: { type: "fmsine" }, envelope: { attack: 0.01, decay: 0.4, sustain: 0.01, release: 1.4, attackCurve: "exponential" } }).toDestination();
                 this.loops.background.volume.value = -25;
                 this.isInitialized = true; console.log("Audio Context Initialized.");
@@ -269,7 +268,6 @@ currentView: 'language', // MODIFIED: Skip language selection
             stopAllLoops() {
                 if (!this.isInitialized) return;
                 this.loops.ringtone.stop();
-                this.loops.typewrite.stop();
                 this.loops.background.triggerRelease(Tone.now());
             }
         };
@@ -725,7 +723,6 @@ state.currentView = 'call'; // MODIFIED: Skip intro, start call                 
             const span = element.querySelector('span');
             const messagesContainer = document.getElementById('chat-messages'); // Get container
             state.isTyping = true;
-            audioManager.playLoop('typewrite');
 
             function type() {
                 if (index < text.length) {
@@ -741,7 +738,6 @@ state.currentView = 'call'; // MODIFIED: Skip intro, start call                 
                     element.classList.remove('typing');
                     span.textContent = text;
                     state.isTyping = false;
-                    audioManager.stopLoop('typewrite');
                     if (messagesContainer) { // Final scroll
                          setTimeout(() => { // Defer scroll to end of event loop
                             messagesContainer.scrollTop = messagesContainer.scrollHeight;
@@ -958,7 +954,7 @@ state.currentView = 'call'; // MODIFIED: Skip intro, start call                 
         // --- FIX: Modified scrolling logic ---
         function addChatMessage(text, type) {
             if (type === 'sent') { audioManager.play('send'); }
-            else if (type === 'received') { audioManager.play('receive'); }
+            // Don't play receive sound for auto-typed incoming messages
             
             const messagesContainer = document.getElementById('chat-messages');
             const bubble = document.createElement('div');
